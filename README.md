@@ -17,5 +17,5 @@ PUT INTERACTIVE PLOTS
 
 PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
 
-This is a list of ranked actors. ![](https://github.com/AndreSchakkal/ada-actor-website/blob/master/index.html)
+This is a list of ranked actors. ![f](https://github.com/AndreSchakkal/ada-actor-website/blob/master/index.html)
 
