@@ -13,4 +13,6 @@ Popularity IMDb rating, IMDb rating would not only qantify the cinematic quality
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
-Justify 
+PUT INTERACTIVE PLOTS
+
+PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
