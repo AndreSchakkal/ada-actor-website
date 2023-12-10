@@ -31,7 +31,7 @@ Finally, to obtain an actor's overall recognition coefficient, we aggregate the 
 
 $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i)$$
 
-Here, $Y$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
+Here, $$Y$$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
 
 
 After defining these coefficients, we can now delve into our analysis of Actors' Recognition.
