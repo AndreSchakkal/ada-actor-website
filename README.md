@@ -34,9 +34,12 @@ After defining these coefficients, we can now delve into our analysis of Actors'
 
 
 
+Here is a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
+{% include Actor_table.html %}
+ 
 
 
-
+# Remarks
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
@@ -45,5 +48,4 @@ PUT INTERACTIVE PLOTS
 PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
 https://www.convertcsv.com/csv-to-html.htm
 
-{% include Actor_table.html %}
- 
+
