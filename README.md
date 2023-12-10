@@ -11,7 +11,7 @@ We've all certainly always got into debates like: "No! This actor is more worldw
 
 In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($RC_{movie}$). This coefficient captures an actor's recognition in a specific year and movie, calculated as the average of the normalized movie rating and box office revenue scores:
 $$RC_{movie}(actor,year,movie) = \frac{Normalized \textunderscore Revenue(actor,year,movie) + Normalized \textunderscore Rating(actor,year,movie)}{2}$$
-Here, $Normalized_Revenue(actor, year, movie)$ and $Normalized_Rating(actor, year, movie)$ represent the normalized rating and box office revenue scores, respectively.
+Here, $Normalized \textunderscore Revenue(actor, year, movie)$ and $Normalized \textunderscore Rating(actor, year, movie)$ represent the normalized rating and box office revenue scores, respectively.
 
 To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
