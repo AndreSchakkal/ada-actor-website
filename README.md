@@ -13,7 +13,7 @@ In our methodology for assessing an actor's recognition over time, we introduce 
 
 $$RC_{movie}(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
 
-Here, $Normalized \textunderscore Revenue(actor, year, movie)$ and $Normalized \textunderscore Rating(actor, year, movie)$ represent the normalized rating and box office revenue scores, respectively.
+Here, $$Normalized \_ Revenue(actor, year, movie)$$ and $$Normalized \_ Rating(actor, year, movie)$$ represent the normalized rating and box office revenue scores, respectively.
 
 To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
