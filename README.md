@@ -44,9 +44,15 @@ RESULTS:
 Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} < < 0.05$$. This means that we have strong evidence to reject the null-Hypothesis that suggests that there is no correlation between the Year and the Average Recognition Coefficient. This would suggest that with time the average "Magnitude of Recognition" of actors increases, i.e. the revenue and rating of movies increases with time, suggesting that actors become more and more well-recognized and Cinema is taking a bigger part in society. That is indeed what we see in the plot, where we see that thr average recognition coefficient is increasing with time.
 
 
+
+Looking at the graph, we suspect that there is a strong change in the way the average recognition coefficient increases post-1970. 
+
+To be sure of that, we can perform a Chow test, which tests if the coefficients in two different regression models on different regions of the data are equal. Performing the test, we get a $$p-value=  < < 0.05$$ **WRITE THE VALUE HERE**
+
+Since the p-value is less than .05, we can reject the null hypothesis of the test. This means we have sufficient evidence to say that a structural break point is present in the data.
 **CHOW TEST: STATISTICAL TEST TWO SEE IF TWO PARTS OF A TIMESERIES VARIABLE HAVE DIFFERENT TRENDS?**
 
-**We see that there is a strong change in the way the average recognition coefficient increases post-1970. Actors are getting even more recognized and the Cinema is booming after 1970, this is due to ...**
+**Actors are getting even more recognized and the Cinema is booming after 1970, this is due to ...**
 
 **SEARCH FOR REASONS (IMPORTANT DATES IN CINEMA? THE GODFATHER 1972?)**
 **Blockbuster Phenomenon "Jaws" (1975): Directed by Steven Spielberg, "Jaws" is often considered the first blockbuster film, changing the landscape of film distribution and marketing.
@@ -74,6 +80,11 @@ Moving on, having this list of actors, we can try to visualize the distribution 
 {% include well_recognized_actors_plot.html %}
 
 Indeed as we can imagine, we see that among these 10% of actors, their majority is present in modern-days. Once again, we see this final decrease we saw before, likely due to the fact that in the most recent years (until 2012), the data is not very much up to date. Moreover, we can also see this sudden increase in number of actors post-1970, which is likely to be due to the reasons we explained before.
+
+
+## Actor Recognition Longevity
+
+Now that we analyzed 
 
 
 # Remarks
