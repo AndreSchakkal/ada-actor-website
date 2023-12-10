@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .scrollable-table {
-      max-height: 300px; /* Set the maximum height of the table */
-      overflow-y: auto; /* Enable vertical scrolling */
-      display: block; /* Display as a block to enable overflow */
+      max-height: 300px;
+      overflow-y: auto;
+      display: block;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 0; /* Remove any default margin-bottom */
+      margin-bottom: 0;
     }
 
     th, td {
@@ -25,15 +25,21 @@
     th {
       background-color: #f2f2f2;
     }
+
+    .search-input {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
+
 <div class="search-input">
   <label for="actorSearch">Search Actor Name:</label>
   <input type="text" id="actorSearch" oninput="filterTable()" placeholder="Enter actor name...">
 </div>
+
 <div class="scrollable-table">
-  <table class="table table-bordered table-hover table-condensed">
+  <table class="table table-bordered table-hover table-condensed" id="actorTable">
     <thead>
       <tr>
         <th title="Field #1">FIELD1</th>
@@ -53,106 +59,10 @@
         <td>M</td>
         <td>/m/0xnvg</td>
       </tr>
-      <tr>
-<td align="right">1</td>
-<td>Clint Eastwood</td>
-<td>0.23579767736899415</td>
-<td>1930-05-31</td>
-<td>M</td>
-<td>/m/09vc4s</td>
-</tr>
-<tr>
-<td align="right">2</td>
-<td>Harrison Ford</td>
-<td>0.22779377027293743</td>
-<td>1884-03-16</td>
-<td>M</td>
-<td>/m/01qhm_</td>
-</tr>
-<tr>
-<td align="right">3</td>
-<td>Donald Sutherland</td>
-<td>0.22474357741559692</td>
-<td>1935-07-17</td>
-<td>M</td>
-<td>/m/07bch9</td>
-</tr>
-<tr>
-<td align="right">4</td>
-<td>Michael Caine</td>
-<td>0.2245481565918617</td>
-<td>1933-03-14</td>
-<td>M</td>
-<td> </td>
-</tr>
-<tr>
-<td align="right">5</td>
-<td>Dennis Quaid</td>
-<td>0.21415067499418203</td>
-<td>1954-04-09</td>
-<td>M</td>
-<td>/m/0fqz6</td>
-</tr>
-<tr>
-<td align="right">6</td>
-<td>Anthony Hopkins</td>
-<td>0.2104301573611515</td>
-<td>1937-12-31</td>
-<td>M</td>
-<td>/m/02g7sp</td>
-</tr>
-<tr>
-<td align="right">7</td>
-<td>Robert Duvall</td>
-<td>0.2085133537234515</td>
-<td>1931-01-05</td>
-<td>M</td>
-<td> </td>
-</tr>
-<tr>
-<td align="right">8</td>
-<td>Paul Newman</td>
-<td>0.20431267783839094</td>
-<td>1925-01-26</td>
-<td>M</td>
-<td>/m/027n1m6</td>
-</tr>
-<tr>
-<td align="right">9</td>
-<td>Gene Hackman</td>
-<td>0.20191246418625716</td>
-<td>1930-01-30</td>
-<td>M</td>
-<td>/m/07hwkr</td>
-</tr>
-<tr>
-<td align="right">10</td>
-<td>Sylvester Stallone</td>
-<td>0.20154074366157385</td>
-<td>1946-07-06</td>
-<td>M</td>
-<td>/m/0xnvg</td>
-</tr>
-<tr>
-<td align="right">11</td>
-<td>Kurt Russell</td>
-<td>0.2007869211403119</td>
-<td>1951-03-17</td>
-<td>M</td>
-<td> </td>
-</tr>
-<tr>
-<td align="right">12</td>
-<td>Jack Lemmon</td>
-<td>0.19904944349441178</td>
-<td>1925-02-08</td>
-<td>M</td>
-<td> </td>
-</tr>
+      <!-- Add additional rows as needed -->
     </tbody>
   </table>
 </div>
-
 
 <script>
   function filterTable() {
@@ -162,7 +72,7 @@
     table = document.getElementById("actorTable");
     tr = table.getElementsByTagName("tr");
 
-    for (i = 0; i < tr.length; i++) {
+    for (i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
       td = tr[i].getElementsByTagName("td")[1]; // Column index for Actor Name
       if (td) {
         txtValue = td.textContent || td.innerText;
@@ -175,6 +85,6 @@
     }
   }
 </script>
-  
+
 </body>
 </html>
