@@ -21,7 +21,7 @@ In this equation, $n(actor)$ represents the total number of movies in which the 
 
 Recognizing that an actor may maintain a certain level of recognition even in years with no movie releases, we incorporate a momentum effect. The yearly recognition coefficient is updated with a fraction ($C=0.9$) of the actor's previous year's recognition coefficient:
 
-$$  \overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{year}}(actor,year-1) $$
+$$\overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{year}}(actor,year-1)$$
 It is important to note that we initialize the momentum term, $\overline{RC_{year}}(actor, 0)$, to zero.
 
 Finally, to obtain an actor's overall recognition coefficient, we aggregate the yearly recognition coefficients with momentum over a span of years:
