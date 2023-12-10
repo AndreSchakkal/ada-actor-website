@@ -32,7 +32,7 @@ Where:
 
 Finally, in order to have an overall recognition coefficient for each actor, we aggregate the yearly Recognition Coefficient with momentum in the following way:
 
-$$  RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i) $$
+$$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i)$$
 Where:
 - $Y$ is the total number of years.
 
