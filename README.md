@@ -23,12 +23,18 @@ Where:
 
 Since even if a certain actor does not play in any movie in a certain year, an actor would remain well-recognized to a certain extent during this year. To account for this effect, we add a certain fraction of the actor past year's Recognition Coefficient to the the current year's Recognition Coefficient.
 
-We update the Recognition Coefficient with momentum with the following formula:
+We update the yearly Recognition Coefficient with momentum with the following formula:
 
-$$  \overline{RC_{year}}(actor,year) = Recognition(actor,year) + C *\overline{RC_{year}}(actor,year-1) $$
+$$  \overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{year}}(actor,year-1) $$
 
 Where:
-- $C$ is the previous year contribution, here $C=0.9$
+- $C$ is the previous year contribution, here we use $C=0.9$
+
+Finally, in order to have an overall recognition coefficient for each actor, we aggregate the yearly Recognition Coefficient with momentum in the following way:
+
+$$  RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i) $$
+Where:
+- $Y$ is the total number of years.
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
