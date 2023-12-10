@@ -11,7 +11,7 @@ We've all certainly always got into debates like: "No! This actor is more worldw
 
 In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($$RC_{movie}$$). This coefficient captures an actor's recognition in a specific year and movie, calculated as the average of the normalized movie rating and box office revenue scores:
 
-$$RC_{movie}(actor,year,movie) = \frac{Normalized \textunderscore Revenue(actor,year,movie) + Normalized \textunderscore Rating(actor,year,movie)}{2}$$
+$$RC_{movie}(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
 
 Here, $Normalized \textunderscore Revenue(actor, year, movie)$ and $Normalized \textunderscore Rating(actor, year, movie)$ represent the normalized rating and box office revenue scores, respectively.
 
@@ -19,13 +19,13 @@ To gauge an actor's overall recognition in a given year, we aggregate the movie 
 
 $$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} RC_{movie}(actor,year,{movie}_i)$$
 
-In this equation, $n(actor)$ represents the total number of movies in which the actor participated during the specific year.
+In this equation, $$n(actor)$$ represents the total number of movies in which the actor participated during the specific year.
 
-Recognizing that an actor may maintain a certain level of recognition even in years with no movie releases, we incorporate a momentum effect. The yearly recognition coefficient is updated with a fraction ($C=0.9$) of the actor's previous year's recognition coefficient:
+Recognizing that an actor may maintain a certain level of recognition even in years with no movie releases, we incorporate a momentum effect. The yearly recognition coefficient is updated with a fraction ($$C=0.9$$) of the actor's previous year's recognition coefficient:
 
 $$\overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{year}}(actor,year-1)$$
 
-It is important to note that we initialize the momentum term, $\overline{RC_{year}}(actor, 0)$, to zero.
+It is important to note that we initialize the momentum term, $$\overline{RC_{year}}(actor, 0)$$, to zero.
 
 Finally, to obtain an actor's overall recognition coefficient, we aggregate the yearly recognition coefficients with momentum over a span of years:
 
