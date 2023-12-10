@@ -12,6 +12,7 @@ Where:
 - $Recognition(actor,year,movie)$ is the actor's recognition coefficient in a specific year in a specific movie.
 - $Normalized_Revenue(actor,year,movie)$ is the normalized movie's rating score.
 - $Normalized_Rating(actor,year,movie)$ is the normalized movie's box office revenue score.
+
 We aggregate this coefficient to find a yearly recognition coefficient, which represents an actor's recognition coefficient in a specific year.:
 $$  RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} Recognition(actor,year,{movie}_i) $$
 Where:
