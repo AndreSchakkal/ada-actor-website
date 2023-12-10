@@ -38,16 +38,25 @@ After defining these coefficients, we can now delve into our analysis of Actors'
 
 {% include recognition_plot.html %}
 
-REGRESSION
-
 RESULTS:
-We see an increase suggesting that actors are becoming more and more recognized
+Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} \< \< 0.05$$. This means that we have strong evidence to reject the null-Hypothesis that suggests that there is no correlation between the Year and the Average Recognition Coefficient. This would suggest that with time the average "Magnitude of Recognition" of actors increases, i.e. the revenue and rating of movies increases with time, suggesting that actors become more and more well-recognized and Cinema is taking a bigger part in society. That is indeed what we see in the plot, where we see that thr average recognition coefficient is increasing with time.
 
+In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
 
-Here is a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
+After checking the Actor Recognition through the years, let us move on to the more exciting part: Evaluating the overall recognition of actors. We present here a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
+
+ADAPT ETHNICITIES (AND NOT KNOWN  ONES)
 
 {% include Actor_table.html %}
+
+We hope you found your favorite actors among this list 😀.
  
+The above table provides a glimpse into the top well-recognized actors, showcasing their General Recognition Coefficients. Notably, in the first rankings the list features both contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Also, sadly but intuitivly, we see that the number of female actors is very minorr. Showcasing the still existing dominace of well-known male actors.
+This ranking highlights the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
+
+
+Number of actors blabla
+Once again, In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
 
 
 # Remarks
