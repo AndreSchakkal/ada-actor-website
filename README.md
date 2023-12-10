@@ -15,7 +15,8 @@ Where:
 
 We aggregate this coefficient to find a yearly recognition coefficient, which represents an actor's recognition coefficient in a specific year:
 
-$$  RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} Recognition(actor,year,{movie}_i) $$
+$$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} Recognition(actor,year,{movie}_i)$$
+
 Where:
 - $Recognition(actor,year,{movie}_i)$ represents the Recognition Coefficient for the i-th movie that actor has played in a specific year.
 - $ n(actor)$ is the total number of movies the actor has participated in during a specific year.
