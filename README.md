@@ -70,7 +70,7 @@ ADAPT ETHNICITIES (AND NOT KNOWN  ONES)
 {% include Actor_table.html %}
 
 
-We hope you found your favorite actors among this list 😀.
+We hope that you found your favorite actors among this list 😀.
  
 The above table provides a glimpse into the top well-recognized actors, showcasing their General Recognition Coefficients. Notably, in the first rankings the list features both contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Also, sadly but intuitivly, we see that the number of female actors is very minorr. Showcasing the still existing dominace of well-known male actors.
 This ranking highlights the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
@@ -84,7 +84,21 @@ Indeed as we can imagine, we see that among these 10% of actors, their majority 
 
 ## Actor Recognition Longevity
 
-Now that we had a timely approach to Actors' Recognition, let's now see how this Recognition lasts over time. 
+Now that we had a timely approach to Actors' Recognition, let's now see how this Recognition lasts over time. The idea is to examine the span of the actors' Recognition through time. In other words, we are trying to find the year in which the actor started to be well-recognized and the year this recognition "ended". The criteria for determining these periods involve selecting the range of years in which the Actor Yearly Recognition Coefficient surpasses a defined threshold. This threshold is set at 50% of the actor's highest recognition coefficient score, providing a concise measure of the actor's sustained impact over time. We can see below the plot showing the average span of recognition through the years.
+
+**PLOT**
+
+We observe that actors starting to be well-recognized after 1970 have decreasingly small spans of recognition. This is due to the fact the data we have ends in 2012, this means that these actors are probably still acting after 2012 but we don't have the corresponding data. Therefore the Last Year of recognition of these actors is considered to be around 2012 as we can see in the following histogram
+
+**HISTOGRAM**
+
+In order to evaluate the correlation between the average recognition span and first year of recognition, we use only the data before 1970, since the decrease of recognition span after 1970 is not reflective of the reality. Therefore, we fit a linear regression on spans starting before 1970.
+
+**PLOT**
+
+Based on the above graph and the Pearson test we do (which gives us a $$p-value= 0.0008<0.05$$ ), we observe a trend of increase in the average span of recognition for actors (before 1970). This result suggests that with time actors tend to have longer periods of recognition. This could be attributed to several factors like increase in quality of health and more late retirements.
+
+### Recognition coefficient of specific actors
 
 
 # Remarks
