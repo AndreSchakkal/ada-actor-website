@@ -5,6 +5,8 @@ EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING
 
 PUT ALL USED DATASETS
 
+A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS
+
 ## Actor’s Recognition
 
 We've all certainly always got into debates like: "No! This actor is more worldwide recognized than this one!" or things like: "I don't agree, I think this actor is the most known ever!" We've come to help! To mitigate any doubt, the idea would be to quantify an Actor's Recognition and study its evolution. Let's start walking you through how we do that. In our analysis, we consider that an Actor's recognition depends on the revenue, quality and popularity of the movies the corresponding Actor acts in. Indeed, if an Actor is very well-known, he would be majoritarly acting in movies of high revenue and high popularity. On the other hand, a not-so recognized Actor would be in the major part of his career in movies that are not very well-known, i.e. that do not have very high revenues and that are not very popular. To account for movie revenue we use the movie Box-office while adapting its value with yearly inflation rates to have the same monetary scale for comparison. Furthermore to account for quality and popularity, we use IMDb ratings, IMDb rating would not only qantify the cinematic quality of a movie but also its popularity, since IMDb rating are done by "normal movie lovers" (CHANGE) and not by professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. What is necessary now is that we define a recognition coefficient ($$RC$$)  to asses the recognition of an actor. Let us now define some coefficients that will be relevant to our analysis.
@@ -39,7 +41,19 @@ After defining these coefficients, we can now delve into our analysis of Actors'
 {% include recognition_plot.html %}
 
 RESULTS:
-Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} \< \< 0.05$$. This means that we have strong evidence to reject the null-Hypothesis that suggests that there is no correlation between the Year and the Average Recognition Coefficient. This would suggest that with time the average "Magnitude of Recognition" of actors increases, i.e. the revenue and rating of movies increases with time, suggesting that actors become more and more well-recognized and Cinema is taking a bigger part in society. That is indeed what we see in the plot, where we see that thr average recognition coefficient is increasing with time.
+Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} < < 0.05$$. This means that we have strong evidence to reject the null-Hypothesis that suggests that there is no correlation between the Year and the Average Recognition Coefficient. This would suggest that with time the average "Magnitude of Recognition" of actors increases, i.e. the revenue and rating of movies increases with time, suggesting that actors become more and more well-recognized and Cinema is taking a bigger part in society. That is indeed what we see in the plot, where we see that thr average recognition coefficient is increasing with time.
+
+
+**CHOW TEST: STATISTICAL TEST TWO SEE IF TWO PARTS OF A TIMESERIES VARIABLE HAVE DIFFERENT TRENDS?**
+
+**We see that there is a strong change in the way the average recognition coefficient increases post-1970. Actors are getting even more recognized and the Cinema is booming after 1970, this is due to ...**
+
+**SEARCH FOR REASONS (IMPORTANT DATES IN CINEMA? THE GODFATHER 1972?)**
+**Blockbuster Phenomenon "Jaws" (1975): Directed by Steven Spielberg, "Jaws" is often considered the first blockbuster film, changing the landscape of film distribution and marketing.
+"Star Wars" (1977):George Lucas's "Star Wars" revolutionized the science fiction genre and became a cultural phenomenon, setting new standards for special effects and merchandising.
+Home Video Revolution (1980) :**
+**The introduction of VHS and Betamax allowed audiences to watch films at home, transforming the industry's distribution model.**
+
 
 In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
 
@@ -49,14 +63,17 @@ ADAPT ETHNICITIES (AND NOT KNOWN  ONES)
 
 {% include Actor_table.html %}
 
+
 We hope you found your favorite actors among this list 😀.
  
 The above table provides a glimpse into the top well-recognized actors, showcasing their General Recognition Coefficients. Notably, in the first rankings the list features both contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Also, sadly but intuitivly, we see that the number of female actors is very minorr. Showcasing the still existing dominace of well-known male actors.
 This ranking highlights the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
 
+Moving on, having this list of actors, we can try to visualize the distribution of only the top 10% Well-recognized of these actors. Are the modern-day actors more present among these 10%?
 
-Number of actors blabla
-Once again, In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
+{% include well_recognized_actors_plot.html %}
+
+Indeed as we can imagine, we see that among these 10% of actors, their majority is present in modern-days. Once again, we see this final decrease we saw before, likely due to the fact that in the most recent years (until 2012), the data is not very much up to date. Moreover, we can also see this sudden increase in number of actors post-1970, which is likely to be due to the reasons we explained before.
 
 
 # Remarks
