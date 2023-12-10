@@ -19,3 +19,16 @@ PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFI
 
 This is a list of ranked actors. [View Full List](https://github.com/AndreSchakkal/ada-actor-website/blob/master/index.html)
 
+<!-- Add this script at the end of your README.md file -->
+<script src="https://cdn.jsdelivr.net/npm/list.js@2.3.1"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var options = {
+      valueNames: ["rank", "actor-name"],
+    };
+
+    var actorList = new List("actors", options);
+  });
+</script>
+
+
