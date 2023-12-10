@@ -1,0 +1,50 @@
+# Actor Ranking
+
+This is a list of ranked actors in a table.
+
+<div id="actors">
+  <table id="actorTable">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Actor Name</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Fetch data from CSV file
+    fetch('actors.csv')
+      .then(response => response.text())
+      .then(data => {
+        // Parse CSV data
+        const rows = data.split('\n').map(row => row.split(','));
+        
+        // Populate table
+        const tbody = document.getElementById('actorTable').getElementsByTagName('tbody')[0];
+        rows.forEach(row => {
+          const tr = document.createElement('tr');
+          row.forEach(cell => {
+            const td = document.createElement('td');
+            td.appendChild(document.createTextNode(cell));
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+
+        // Initialize DataTable
+        $("#actorTable").DataTable({
+          searching: true,
+          paging: true,
+          lengthChange: false,
+          pageLength: 10,
+        });
+      });
+  });
+</script>
