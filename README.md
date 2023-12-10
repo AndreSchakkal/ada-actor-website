@@ -34,8 +34,14 @@ $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{y
 Here, $$Y$$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
 
 
-After defining these coefficients, we can now delve into our analysis of Actors' Recognition.
+After defining these coefficients, we can now delve into our analysis of Actors' Recognition. First, since we have a yearly $$RC$$ for every actor, it would be interesting to examine the mean-magnitude of recognition every year, here's a plot showing this.
 
+{% include recognition_plot.html %}
+
+REGRESSION
+
+RESULTS:
+We see an increase suggesting that actors are becoming more and more recognized
 
 
 Here is a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
