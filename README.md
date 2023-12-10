@@ -84,7 +84,7 @@ Indeed as we can imagine, we see that among these 10% of actors, their majority 
 
 ## Actor Recognition Longevity
 
-Now that we analyzed 
+Now that we had a timely approach to Actors' Recognition, let's now see how this Recognition lasts over time. 
 
 
 # Remarks
