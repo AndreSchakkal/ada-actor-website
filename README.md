@@ -15,15 +15,20 @@ Where:
 
 We aggregate this coefficient to find a yearly recognition coefficient, which represents an actor's recognition coefficient in a specific year:
 
-$$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} Recognition(actor,year,{movie}_i)$$
+$$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} RC_{movie}(actor,year,{movie}_i)$$
 
 Where:
 - $Recognition(actor,year,{movie}_i)$ represents the Recognition Coefficient for the i-th movie that actor has played in a specific year.
 - $ n(actor)$ is the total number of movies the actor has participated in during a specific year.
 
-$$dd$$
+Since even if a certain actor does not play in any movie in a certain year, an actor would remain well-recognized to a certain extent during this year. To account for this effect, we add a certain fraction of the actor past year's Recognition Coefficient to the the current year's Recognition Coefficient.
 
+We update the Recognition Coefficient with momentum with the following formula:
 
+$$  \overline{RC_{year}}(actor,year) = Recognition(actor,year) + C *\overline{RC_{year}}(actor,year-1) $$
+
+Where:
+- $C$ is the previous year contribution, here $C=0.9$
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
