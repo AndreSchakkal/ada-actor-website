@@ -36,6 +36,36 @@ $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{y
 Where:
 - $Y$ is the total number of years.
 
+
+
+
+In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($RC_{movie}$). This coefficient captures an actor's recognition in a specific year and movie, calculated as the average of the normalized movie rating and box office revenue scores:
+$$RC_{movie}(actor,year,movie) = \frac{Normalized \textunderscore Revenue(actor,year,movie) + Normalized \textunderscore Rating(actor,year,movie)}{2}$$
+Here, $Normalized_Revenue(actor, year, movie)$ and $Normalized_Rating(actor, year, movie)$ represent the normalized rating and box office revenue scores, respectively.
+
+To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
+
+$$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} RC_{movie}(actor,year,{movie}_i)$$
+
+In this equation, $n(actor)$ represents the total number of movies in which the actor participated during the specific year.
+
+
+
+Recognizing that an actor may maintain a certain level of recognition even in years with no movie releases, we incorporate a momentum effect. The yearly recognition coefficient is updated with a fraction ($C=0.9$) of the actor's previous year's recognition coefficient:
+
+$$  \overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{year}}(actor,year-1) $$
+
+Finally, to obtain an actor's overall recognition coefficient, we aggregate the yearly recognition coefficients with momentum over a span of years:
+
+$$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i)$$
+Here, $Y$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
+
+
+
+
+
+
+
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
 PUT INTERACTIVE PLOTS
