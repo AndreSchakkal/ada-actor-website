@@ -60,8 +60,8 @@ Since the p-value is less than .05, we can reject the null hypothesis of the tes
 Home Video Revolution (1980) :**
 **The introduction of VHS and Betamax allowed audiences to watch films at home, transforming the industry's distribution model.**
 <p align="center">
-  <img src="images/STAR_WARS.jpg" width="600" alt="Image 1">
-  <img src="images/JAWS.jpg" width="200" alt="Image 2">
+  <img src="images/STAR_WARS.jpg" width="1000" alt="Image 1">
+  <img src="images/JAWS.jpg" width="100" alt="Image 2">
 </p>
 
 
