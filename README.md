@@ -99,8 +99,15 @@ In order to evaluate the correlation between the average recognition span and fi
 Based on the above graph and the Pearson test we do (which gives us a $$p-value= 0.0008<0.05$$ ), we observe a trend of increase in the average span of recognition for actors (before 1970). This result suggests that with time actors tend to have longer periods of recognition. This could be attributed to several factors like increase in quality of health and more late retirements.
 
 ### Recognition coefficient of specific actors
+As an interesting step, we can also inspect the evolution of the recognition coefficient of different actors:
+**PLOT**
+From the graphs above, we can see how the Recognition of different actors varies with time:
+- Michael Caine: We can see that Michael Caine has a very long span of recognition, starting to be well-recognized around 1960 until after 2012. It is also interesting to notice that for the period 1990-2000, he acted in less-succesful movies, but then he had his recognition increase again.
+- John Wayne: The second plot with John Wayne is also very interesting since it allows to visualize the Recognition of an actor that stopped to be well-recognized. We can see how his recognition coefficient decreases with time abruptly after 1979, which is in fact the date of his death
 
+Now, your turn! You can write plot the evolution of the recognition of your favorite actor
 
+{% include Actor_recognition_graph.html %}
 # Remarks
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
