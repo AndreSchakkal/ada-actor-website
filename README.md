@@ -59,6 +59,10 @@ Since the p-value is less than .05, we can reject the null hypothesis of the tes
 "Star Wars" (1977):George Lucas's "Star Wars" revolutionized the science fiction genre and became a cultural phenomenon, setting new standards for special effects and merchandising.
 Home Video Revolution (1980) :**
 **The introduction of VHS and Betamax allowed audiences to watch films at home, transforming the industry's distribution model.**
+<p align="center">
+  <img src="images/STAR_WARS.jpg" width="400" alt="Image 1">
+  <img src="images/JAWS.jpg" width="400" alt="Image 2">
+</p>
 
 
 In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
