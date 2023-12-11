@@ -61,10 +61,10 @@ Home Video Revolution (1980) :**
 **The introduction of VHS and Betamax allowed audiences to watch films at home, transforming the industry's distribution model.**
 <p align="center">
   <img src="images/STAR_WARS.jpg" width="600" alt="Image 1">
-  <img src="images/JAWS.jpg" width="250" alt="Image 2">
+  <img src="images/JAWS.jpg" width="220" alt="Image 2">
 </p>
 <p align="center">
-  <img src="images/VHS.png" width="600" alt="Image 1">
+  <img src="images/VHS.png" width="400" alt="Image 1">
 </p>
 
 
