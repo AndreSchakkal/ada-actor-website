@@ -105,7 +105,7 @@ From the graphs above, we can see how the Recognition of different actors varies
 - Michael Caine: We can see that Michael Caine has a very long span of recognition, starting to be well-recognized around 1960 until after 2012. It is also interesting to notice that for the period 1990-2000, he acted in less-succesful movies, but then he had his recognition increase again.
 - John Wayne: The second plot with John Wayne is also very interesting since it allows to visualize the Recognition of an actor that stopped to be well-recognized. We can see how his recognition coefficient decreases with time abruptly after 1979, which is in fact the date of his death
 
-Now, your turn! You can write plot the evolution of the recognition of your favorite actor
+Now, your turn! You can see the plot of the evolution of the recognition of your favorite actor. Try **INTERESTING EXAMPLES**
 
 {% include Actor_recognition_graph.html %}
 # Remarks
