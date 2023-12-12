@@ -1,12 +1,6 @@
 remote_theme: pages-themes/cayman@v0.2.0
-title: "Actors Representation: Actor’s Recognition, Gender and Ethnicity throughout history and time"
-description: A template website for ADA
-show_downloads: True
-navigation:
-  - title: Home
-    url: /
-  - title: Example
-    url: example
+title: [Actors Representation: Actor’s Recognition, Gender and Ethnicity throughout history and time]
+description: [A template website for ADA]
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
