@@ -1,4 +1,3 @@
-# Actors Representation: Actor’s Recognition, Gender and Ethnicity throughout history and time 📆
 In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor's recognition and its longevity been influenced by specific attributes such as genre, ethnicity? Acting isn't an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
 
 EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING
@@ -7,7 +6,7 @@ PUT ALL USED DATASETS
 
 A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS
 
-## Actor’s Recognition
+# Actor’s Recognition
 
 We've all certainly always got into debates like: "No! This actor is more worldwide recognized than this one!" or things like: "I don't agree, I think this actor is the most known ever!" We've come to help! To mitigate any doubt, the idea would be to quantify an Actor's Recognition and study its evolution. Let's start walking you through how we do that. In our analysis, we consider that an Actor's recognition depends on the revenue, quality and popularity of the movies the corresponding Actor acts in. Indeed, if an Actor is very well-known, he would be majoritarly acting in movies of high revenue and high popularity. On the other hand, a not-so recognized Actor would be in the major part of his career in movies that are not very well-known, i.e. that do not have very high revenues and that are not very popular. To account for movie revenue we use the movie Box-office while adapting its value with yearly inflation rates to have the same monetary scale for comparison. Furthermore to account for quality and popularity, we use IMDb ratings, IMDb rating would not only qantify the cinematic quality of a movie but also its popularity, since IMDb rating are done by "normal movie lovers" (CHANGE) and not by professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. What is necessary now is that we define a recognition coefficient ($$RC$$)  to asses the recognition of an actor. Let us now define some coefficients that will be relevant to our analysis.
 
@@ -89,7 +88,7 @@ Moving on, having this list of actors, we can try to visualize the distribution 
 Indeed as we can imagine, we see that among these 10% of actors, their majority is present in modern-days. Once again, we see this final decrease we saw before, likely due to the fact that in the most recent years (until 2012), the data is not very much up to date. Moreover, we can also see this sudden increase in number of actors post-1970, which is likely to be due to the reasons we explained before.
 
 
-## Actor Recognition Longevity
+# Actor Recognition Longevity
 
 Now that we had a timely approach to Actors' Recognition, let's now see how this Recognition lasts over time. The idea is to examine the span of the actors' Recognition through time. In other words, we are trying to find the year in which the actor started to be well-recognized and the year this recognition "ended". The criteria for determining these periods involve selecting the range of years in which the Actor Yearly Recognition Coefficient surpasses a defined threshold. This threshold is set at 50% of the actor's highest recognition coefficient score, providing a concise measure of the actor's sustained impact over time. We can see below the plot showing the average span of recognition through the years.
 
@@ -105,7 +104,7 @@ In order to evaluate the correlation between the average recognition span and fi
 
 Based on the above graph and the Pearson test we do (which gives us a $$p-value= 0.0008<0.05$$ ), we observe a trend of increase in the average span of recognition for actors (before 1970). This result suggests that with time actors tend to have longer periods of recognition. This could be attributed to several factors like increase in quality of health and more late retirements.
 
-### Recognition coefficient of specific actors
+## Recognition coefficient of specific actors
 As an interesting step, we can also inspect the evolution of the recognition coefficient of different actors:
 
 {% include specific_actors.html %}
