@@ -165,12 +165,17 @@ Having an overall Recognition coefficient for every actor, we can inspect the di
 
 **PLOT**
 
-As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender. We have that for each density, $$\int_{0}^{x} f(t) \, dt$$ represents the probability to have a recognition coefficient below $$x$$.
+As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender. We have that for each density, $$\int_{0}^{x} f(t) dt$$ represents the probability to have a recognition coefficient below $$x$$.
+
+**OR CCDF**
 
 {% include recognition_densities.html %}
 
-From the plot above, 
-**SMIRNOV**
+From the plot above, we see that, since the density of female actors has a higher peak, the probability to have low recognition coefficients (below 0.04, for example) is larger for female than for male actors. In other words, male actors that have higher recognition amplitudes are more numerous than female actors. Moreover, to compare if the two density distributions are alike, if they can be sampled from the same distribution, we perform a Kolmogorov–Smirnov test that yields a $$p-value<0.05$$. This means that we have enough evidence to say that the two density distributions are not sampled from the same distribution and that there is a significant difference in these density distributions.
+
+# Actor first-appearance among genders
+
+Another intersting aspect we can inspect is the debut age of the different actors. It would be interesting to find out wether there is a significant difference between the age at which male and female actors start acting. To do the following, we visualize a histogram with the different ages at which male and female actors start acting
 
 
 **TRANSITION WITH Civil Rights Act of 1964**
