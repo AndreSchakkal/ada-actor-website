@@ -148,7 +148,19 @@ After that, we fit a regression line on the proportion of female actors for each
 
 {% include female_actors.html %}
 
-We observe a decrease in female representation between 1914 and 1963 and an increase in female representation between 1980 and 2012. Very small p-values ($$p-value << 0.05$$) corresponding to the regression line **before** and **after** the feminist movement suggest that there is indeed a correlation between the dates of the feminist movement and the observed increase. On the other hand, for the regression **during** the feminist movement, we get a $$p-value>0.05$$ suggesting that there is no significant correlation during the movement itself.
+We observe a decrease in female representation between 1914 and 1963 and an increase in female representation between 1980 and 2012. Very small p-values ($$p-value << 0.05$$) corresponding to the regression line **before** and **after** the feminist movement suggest that there is indeed a correlation between the dates of the feminist movement and the observed increase. On the other hand, for the regression **during** the feminist movement, we get a $$p-value>0.05$$ suggesting that there is no significant correlation during the movement itself. Furthermore, performing a Chow test on the proportion of female actors during the feminist movement and after the feminist movement yields a $$p-value < 0.05$$ suggesting that we can reject the null hypothesis of the test, meaning we have sufficient evidence to say that a structural break point is present in the between during the feminist movement and after the feminist
+
+Furthermore, it would be interesting to examine the proportion of female actors among the 10% most well recognized actors. Does the trend of well-known female actors follow the one of all female actors? Or, are well-known female actor representation follow different trends through time?
+
+To examine that, we select the top 10% well-known actors from the list shown above and plot the proportion of females among those actors through time.
+
+**PLOT**
+
+As we can see, the plot suggests that there is a permenent increase of the proportion of female actors among well-known actors, independent of the feminist movement. We perform once again a Chow test on the proportion of **well-known** female actors **during** the feminist movement and **after** the feminist movement, which yields a $$p-value>0.05$$. Therefore, we don't have enough evidence to suggest any structural breakpoint.
+
+As a small summary, it is interesting to note that we observe that among all female actors we observe an increase of proportion of female actors thanks to the feminist movement. On the other hand, we observe that the proportion of female actors among well-known actors follows another behaviour, this proportion seems to increase through time independently from the feminist movement. 
+
+
 
 
 **TRANSITION WITH Civil Rights Act of 1964**
