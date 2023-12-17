@@ -1,10 +1,12 @@
 In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor's recognition and its longevity been influenced by specific attributes such as genre, ethnicity? Acting isn't an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
 
-EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING
+**EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING**
 
-PUT ALL USED DATASETS
+**PUT ALL USED DATASETS**
 
-A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS
+**A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
+
+**RESEARCH QUESTIONS?**
 
 # Actor’s Recognition
 
@@ -15,6 +17,9 @@ In our methodology for assessing an actor's recognition over time, we introduce 
 $$RC_{movie}(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
 
 Here, $$Normalized \_ Revenue(actor, year, movie)$$ and $$Normalized \_ Rating(actor, year, movie)$$ represent the normalized rating and box office revenue scores, respectively.
+
+**ADD ACTOR IMPORTANCE**
+
 
 To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
@@ -125,4 +130,20 @@ PUT INTERACTIVE PLOTS
 PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
 https://www.convertcsv.com/csv-to-html.htm
 
+# Gender representation over time
 
+As a first step to our analysis, let us inspect the proportion of female and male actors over time.
+
+**PLOT**
+
+As we can see, the proportion of male actors is predominant and is equal nearly to the double of the proportion of female actors throughout time. However, are there some interesting trends that changed throughout time? Did big historical events, like the Feminist Movement, have an impact on female representation in Cinema?
+
+## Impact of the Feminist movement on female representation in Cinema
+The second wave feminist movement, prominent in the 1960s and 1970s, advocated for gender equality and reproductive rights. It gained momentum in the early 1960s, notably sparked by the publication of Betty Friedan's "The Feminine Mystique" in 1963, while its influence gradually waned by the early 1980s. As we know the Feminist movement had a great impact on decreasing gender-based discrimination, like by the Equal Pay Act of 1963, and, Title IX of 1972, an Education Amendment which prohibits gender-based discrimination in educational programs and activities. In this section, we try to explore the impact of this movement on female representation in Cinema and to observe the evolution of female representation during and after this period as it can provide insights into societal shifts and the progress made toward gender parity in cinema.. In order to do that, we divide the data into three parts that are interesting to analyze:
+- Before the feminist movement: from 1914 to 1963.
+- During the feminist movement: from 1963 to 1980.
+- After the feminist movement: from 1980 to 2012.
+- 
+After that, we fit a regression line on the proportion of female actors for each one of these periods.
+
+**TRANSITION WITH Civil Rights Act of 1964**
