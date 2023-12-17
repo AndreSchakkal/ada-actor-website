@@ -146,4 +146,9 @@ The second wave feminist movement, prominent in the 1960s and 1970s, advocated f
 - 
 After that, we fit a regression line on the proportion of female actors for each one of these periods.
 
+{% include female_actors.html %}
+
+We observe a decrease in female representation between 1914 and 1963 and an increase in female representation between 1980 and 2012. Very small p-values ($$p-value << 0.05$$) corresponding to the regression line **before** and **after** the feminist movement suggest that there is indeed a correlation between the dates of the feminist movement and the observed increase. On the other hand, for the regression **during** the feminist movement, we get a $$p-value>0.05$$ suggesting that there is no significant correlation during the movement itself.
+
+
 **TRANSITION WITH Civil Rights Act of 1964**
