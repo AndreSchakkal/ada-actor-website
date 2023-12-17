@@ -165,10 +165,11 @@ Having an overall Recognition coefficient for every actor, we can inspect the di
 
 **PLOT**
 
-As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender.
+As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender. We have that for each density, $$\int_{0}^{x} f(t) \, dt$$ represents the probability to have a recognition coefficient below $$x$$.
 
 {% include recognition_densities.html %}
 
+From the plot above, 
 **SMIRNOV**
 
 
