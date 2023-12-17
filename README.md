@@ -160,7 +160,16 @@ As we can see, the plot suggests that there is a permenent increase of the propo
 
 As a small summary, it is interesting to note that we observe that among all female actors we observe an increase of proportion of female actors thanks to the feminist movement. On the other hand, we observe that the proportion of female actors among well-known actors follows another behaviour, this proportion seems to increase through time independently from the feminist movement. 
 
+## Distribution of Recognition among genders
+Having an overall Recognition coefficient for every actor, we can inspect the distribution of these overall Recognition coefficients among female and male actors. This could be done to explore if recognition is evenly distributed between female and male actors. 
 
+**PLOT**
+
+As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender.
+
+{% include recognition_densities.html %}
+
+**SMIRNOV**
 
 
 **TRANSITION WITH Civil Rights Act of 1964**
