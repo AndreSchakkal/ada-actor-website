@@ -224,7 +224,7 @@ Furthermore, a substantial increase is observed from the intercept of the regres
 
 The bar plot below illustrates the evolution of the proportion of different ethnicities in 10-year intervals. In addition to the already observed increase in African actors, there is a notable surge in the proportion of Asian actors over time. Native actors also show a relative increase in their representation, and even for Arab actors, a modest uptick is noticeable. All these trends are juxtaposed against the proportion of European actors, indicating a transformative shift in world cinema towards greater inclusivity. This evolution reflects a positive trajectory, embracing actors with diverse ethnic backgrounds and contributing to a more representative and inclusive landscape in the realm of cinema.
 
-{% include Ethnicities_Over_Decades %}
+{% include Ethnicities_Over_Decades.html %}
 
 # Remarks 
 
