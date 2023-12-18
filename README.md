@@ -2,7 +2,7 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 **EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING**
 
-**PUT ALL USED DATASETS**
+**PUT ALL USED DATASETS IN ANOTHER PAGE WITH THEIR EXPLANATION, REFER TO THIS PAGE HERE**
 
 **A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
 
@@ -70,7 +70,6 @@ In the meantime we see also some decrease, this likely due to the fact that in t
 
 After checking the Actor Recognition through the years, let us move on to the more exciting part: Evaluating the overall recognition of actors. We present here a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
 
-ADAPT ETHNICITIES (AND NOT KNOWN  ONES)
 
 {% include Actor_table.html %}
 
@@ -112,7 +111,9 @@ From the graphs above, we can see how the Recognition of different actors varies
 - Michael Caine: We can see that Michael Caine has a very long span of recognition, starting to be well-recognized around 1960 until after 2012. It is also interesting to notice that for the period 1990-2000, he acted in less-succesful movies, but then he had his recognition increase again.
 - John Wayne: The second plot with John Wayne is also very interesting since it allows to visualize the Recognition of an actor that stopped to be well-recognized. We can see how his recognition coefficient decreases with time abruptly after 1979, which is in fact the date of his death
 
-Now, your turn! You can see the plot of the evolution of the recognition of your favorite actor. Try **INTERESTING EXAMPLES**
+Now, your turn! You can see the plot of the evolution of the recognition of your favorite actor. Try 
+
+**INTERESTING EXAMPLES**
 
 {% include Actor_recognition_graph.html %}
 
@@ -171,7 +172,13 @@ As we can see, this plot suggests, that is a difference in means. In other words
 
 # Ethnic representation in Cinema over time
 
-Among the great consequences that the Feminist movement had was the Civil Rights Act of 1964, which was an act that was signed to prohibit discrimination on the basis of gender, race, color, religion or national origin. In addition to the Feminist movement, the Civil Rights movement, which proned equality of races, was one of the most important movements that led to the passing of this Act. This leads to the second interesting part of our study, inspecting the representation of different ethnicities in Cinema, how this representation chanegd through time, and most importantly, how important movements like the Civil Rights Movement impacted the representation of black actors in Cinema.
+Among the significant repercussions of the Feminist movement was the enactment of the Civil Rights Act of 1964, a groundbreaking law designed to combat discrimination based on gender, race, color, religion, or national origin. Simultaneously, the Civil Rights movement, advocating for racial equality, played a pivotal role in shaping the legislative landscape. This lays the foundation for our exploration into the dynamic representation of diverse ethnicities in cinema, tracing its evolution over time and specifically examining the profound impact of movements such as the Civil Rights Movement on the portrayal of black actors in the film industry. 
+
+
+To delve into this investigation, comprehensive data on actors' ethnicities is imperative. The [CMU dataset](https://www.cs.cmu.edu/~ark/personas/) offers ethnicities in the form of Freebase IDs. To translate these IDs into actual ethnicities, we utilize a mapping system. Acknowledging the scarcity of ethnicity information for many actors, we try to bridge gaps by extracting data from various [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) pages, including [List of African-American actors](https://en.wikipedia.org/wiki/List_of_African-American_actors), [List of Hispanic and Latino American actors](https://en.wikipedia.org/wiki/List_of_Hispanic_and_Latino_American_actors), and [List of Italian-American actors](https://en.wikipedia.org/wiki/List_of_Italian-American_actors). Despite these efforts to mitigate missing data, a significant portion remains incomplete.
+
+
+However, the prevalence of missing values should not impede our exploration of ethnicities. Operating under the assumption that these gaps occur randomly, akin to a randomized control experiment, we can reasonably exclude them as confounding factors that might influence our analysis outcomes. This perspective empowers us to proceed with our study on ethnic representation in cinema, acknowledging and addressing the challenges posed by missing data.
 
 # Remarks
 
