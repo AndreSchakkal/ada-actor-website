@@ -177,5 +177,12 @@ From the plot above, we see that, since the density of female actors has a highe
 
 Another intersting aspect we can inspect is the debut age of the different actors. It would be interesting to find out wether there is a significant difference between the age at which male and female actors start acting. To do the following, we visualize a histogram with the different ages at which male and female actors start acting
 
+{% include 1st_appearance_hist.html %}
+
+As we can see, this plot suggests, that is a difference in means. In other words, female actors seem to start acting earlier than males. Performing a t-test confirms this hypothesis having a very small p-value ($$p-value <<0.05$$), this suggests that there is enough evidence to say there is a significant difference between the mean first appearance age for female actors and for male actors. The plot below highlights this significant difference, showing a mean first appearance age of 24.2 years for female actors anf 29.0 years for male actors.
+
+{% include 1st_appearance_ci.html %}
+
+
 
 **TRANSITION WITH Civil Rights Act of 1964**
