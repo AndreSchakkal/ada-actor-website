@@ -53,6 +53,7 @@ Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} < < 0
 Looking at the graph, we suspect that there is a strong change in the way the average recognition coefficient increases post-1970. 
 
 To be sure of that, we can perform a Chow test, which tests if the coefficients in two different regression models on different regions of the data are equal. Performing the test, we get a $$p-value=  < < 0.05$$. Since the p-value is smaller than 0.05, we can reject the null hypothesis of the test. This means we have sufficient evidence to say that a structural break point is present in the data. We can say that starting 19770, actors are getting even more recognized and the Cinema is booming, this is boom can be caused by two important historical factors:
+
 - The Blockbuster Phenomenon, "Jaws" (1975): Directed by Steven Spielberg, is often considered the first blockbuster film, changing the landscape of film distribution and marketing. Furthermore the release of "Star Wars" in 1977 (directed by George Luca) revolutionized the science fiction genre and became a cultural phenomenon, setting new standards for the movie industry and how to merchandise it.
 - The second reason could be the invention of VHS (short for Video Home System) in 1976, which allowed audiences to watch films at home, transforming the industry's distribution model and making Cinema more accessible.
 
