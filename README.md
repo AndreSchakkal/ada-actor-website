@@ -226,6 +226,13 @@ The bar plot below illustrates the evolution of the proportion of different ethn
 
 {% include Ethnicities_Over_Decades.html %}
 
+## Distribution of Recognition among ethnicities
+
+Similar to our previous analysis, let's now focus on the top 10% most recognized actors and explore their ethnicities.
+
+{% include ethnicity_10perc_hist.html %}
+
+
 # Remarks 
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
