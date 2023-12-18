@@ -192,7 +192,9 @@ As we can see, with the exception of missing ethnicity entries, European actors 
 
 Let us now see how ths number of actors from the 3-most represented ethnicities vary with time.
 
+{% include total_actors_ethnicity.html %}
 
+{% include actors_ethnicity.html %}
 
 
 
