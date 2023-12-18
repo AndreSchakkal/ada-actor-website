@@ -196,6 +196,11 @@ Let us now see how ths number of actors from the 3-most represented ethnicities 
 
 {% include actors_ethnicity.html %}
 
+Since we are interested in the representation of African actors in Cinema, let us take a look at the third plot.
+Similarly to the other plots, we can see that the number of actors of this ethnicity increases with time. However, for African actors, we observe a sudden increase in their number around 1970. This sudden increase is not perceived in the other plots. This sudden increase could be attributed to the Civil Right Movement which started in 1954 and ended in 1968.
+
+In the meantime, we can see that that the total number of actors (regardless of the ethnicity) increases with time. Therefore, the sudden increase in African actors could be a result of this increase. In order to remove the bias of increasing number of actors, we can examine the **proportion** of actors of each ethnicity instead of their **count**. Examining the **proportion** of African actors in Cinema through the years, could help clarify the impact of the Civil rights movement on their representation.
+
 
 
 # Remarks
