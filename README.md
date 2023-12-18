@@ -12,14 +12,15 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 We've all certainly always got into debates like: "No! This actor is more worldwide recognized than this one!" or things like: "I don't agree, I think this actor is the most known ever!" We've come to help! To mitigate any doubt, the idea would be to quantify an Actor's Recognition and study its evolution. Let's start walking you through how we do that. In our analysis, we consider that an Actor's recognition depends on the revenue, quality and popularity of the movies the corresponding Actor acts in. Indeed, if an Actor is very well-known, he would be majoritarly acting in movies of high revenue and high popularity. On the other hand, a not-so recognized Actor would be in the major part of his career in movies that are not very well-known, i.e. that do not have very high revenues and that are not very popular. To account for movie revenue we use the movie Box-office while adapting its value with yearly inflation rates to have the same monetary scale for comparison. Furthermore to account for quality and popularity, we use IMDb ratings, IMDb rating would not only qantify the cinematic quality of a movie but also its popularity, since IMDb rating are done by "normal movie lovers" (CHANGE) and not by professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. What is necessary now is that we define a recognition coefficient ($$RC$$)  to asses the recognition of an actor. Let us now define some coefficients that will be relevant to our analysis.
 
-In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($$RC_{movie}$$). This coefficient captures an actor's recognition in a specific year and movie, calculated as the average of the normalized movie rating and box office revenue scores:
+In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($$RC_{movie}$$). This coefficient captures an actor's recognition in a specific year and movie. To calculate this coefficient, we calculate a movie coefficient ($$MC$$) as the average of the normalized movie rating and box office revenue scores:
 
-$$RC_{movie}(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
+$$MC(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
 
 Here, $$Normalized \_ Revenue(actor, year, movie)$$ and $$Normalized \_ Rating(actor, year, movie)$$ represent the normalized rating and box office revenue scores, respectively.
 
-**ADD ACTOR IMPORTANCE**
+Since the importance of every actor is not the same in the same movie, we estimate the actor's importance in a given movie by analysing the plot summary of the movie and counting the number of times this actor is mentioned or referenced in the summary. We divide that value by the highest number of mentions to give an estimate between 0 and 1 of how important the character is important in the movie, having then an importance coefficient ($$IC$$). We then use this actor importance in a movie to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
 
+$$RC_{movie}(actor, year, movie) = MC(actor, year, movie) \times (1 + IC(actor, year, movie))$$
 
 To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
