@@ -201,6 +201,12 @@ Similarly to the other plots, we can see that the number of actors of this ethni
 
 In the meantime, we can see that that the total number of actors (regardless of the ethnicity) increases with time. Therefore, the sudden increase in African actors could be a result of this increase. In order to remove the bias of increasing number of actors, we can examine the **proportion** of actors of each ethnicity instead of their **count**. Examining the **proportion** of African actors in Cinema through the years, could help clarify the impact of the Civil rights movement on their representation.
 
+{% include actors_ethnicity_proportion.html %}
+
+
+Contrary to the count plots where we had an increase of number of actors for all the ethnicities, in these plots, we can see that the proportions of Indian actors and Jewish actors increase for some time, but then they start to decrease, which is something we could not predict from the previous plots.
+
+Regarding the African actors, we can see clearly that there is a clear decrease in their proportion until around 1970, where we see the same sudden increase that could be a result of the Civil rights movement.
 
 
 # Remarks
