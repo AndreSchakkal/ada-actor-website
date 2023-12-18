@@ -115,16 +115,8 @@ From the graphs above, we can see how the Recognition of different actors varies
 Now, your turn! You can see the plot of the evolution of the recognition of your favorite actor. Try **INTERESTING EXAMPLES**
 
 {% include Actor_recognition_graph.html %}
-# Remarks
 
-Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
-
-PUT INTERACTIVE PLOTS
-
-PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
-https://www.convertcsv.com/csv-to-html.htm
-
-# Gender representation over time
+# Gender representation in Cinema over time
 
 As a first step to our analysis, let us inspect the proportion of female and male actors over time.
 
@@ -167,7 +159,7 @@ As we can see, the number of female actors and male actors is not the same, howe
 
 From the plot above, we see that, since the density of female actors has a higher peak, the probability to have low recognition coefficients (below 0.04, for example) is larger for female than for male actors. In other words, male actors that have higher recognition amplitudes are more numerous than female actors. Moreover, to compare if the two density distributions are alike, if they can be sampled from the same distribution, we perform a Kolmogorov–Smirnov test that yields a $$p-value<0.05$$. This means that we have enough evidence to say that the two density distributions are not sampled from the same distribution and that there is a significant difference in these density distributions.
 
-# Actor first-appearance among genders
+## Actor first-appearance among genders
 
 Another intersting aspect we can inspect is the debut age of the different actors. It would be interesting to find out wether there is a significant difference between the age at which male and female actors start acting. To do the following, we visualize a histogram with the different ages at which male and female actors start acting
 
@@ -177,6 +169,15 @@ As we can see, this plot suggests, that is a difference in means. In other words
 
 {% include 1st_appearance_ci.html %}
 
+# Ethnic representation in Cinema over time
 
+Among the great consequences that the Feminist movement had was the Civil Rights Act of 1964, which was an act that was signed to prohibit discrimination on the basis of gender, race, color, religion or national origin. In addition to the Feminist movement, the Civil Rights movement, which proned equality of races, was one of the most important movements that led to the passing of this Act. This leads to the second interesting part of our study, inspecting the representation of different ethnicities in Cinema, how this representation chanegd through time, and most importantly, how important movements like the Civil Rights Movement impacted the representation of black actors in Cinema.
 
-**TRANSITION WITH Civil Rights Act of 1964**
+# Remarks
+
+Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
+
+PUT INTERACTIVE PLOTS
+
+PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
+https://www.convertcsv.com/csv-to-html.htm
