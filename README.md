@@ -208,6 +208,13 @@ Contrary to the count plots where we had an increase of number of actors for all
 
 Regarding the African actors, we can see clearly that there is a clear decrease in their proportion until around 1970, where we see the same sudden increase that could be a result of the Civil rights movement.
 
+In order to validate the proposition that there is indeed a significant increase in the proportion of African-American actors, we apply linear regression on the proportion of Afircan-American actors during three intervals of time:
+- Before the Civil rights movement (Before 1954)
+- During the Civil rights movement (After 1954 and before 1968)
+- After the Civil rights movement (After 1968)
+
+{% include african_actors_perc.html %}
+
 
 # Remarks
 
