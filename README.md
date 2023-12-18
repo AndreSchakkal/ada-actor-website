@@ -183,7 +183,12 @@ However, the prevalence of missing values should not impede our exploration of e
 Moreover, the Freebase IDs correspond to 263 different ethnicity names. To streamline and focus our analysis, we employ a mapping system to categorize these 263 ethnicities into six distinct groups : Africans, Arabs, Asians, Europeans, Hispanics, and Natives.
 
 
-Moving on, 
+Moving on, let us examine the number of actors per ethnicity in the data we have.
+
+{% include Ethnicity_Distribution.html %}
+
+As we can see, after missing ehtnicities, european actors are dominating the number of actors of a certain ethnicity
+
 
 # Remarks
 
