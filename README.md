@@ -120,7 +120,7 @@ Now, your turn! You can see the plot of the evolution of the recognition of your
 
 As a first step to our analysis, let us inspect the proportion of female and male actors over time.
 
-**PLOT**
+{% include male_female_proportion.html %}
 
 As we can see, the proportion of male actors is predominant and is equal nearly to the double of the proportion of female actors throughout time. However, are there some interesting trends that changed throughout time? Did big historical events, like the Feminist Movement, have an impact on female representation in Cinema?
 
@@ -140,7 +140,7 @@ Furthermore, it would be interesting to examine the proportion of female actors 
 
 To examine that, we select the top 10% well-known actors from the list shown above and plot the proportion of females among those actors through time.
 
-**PLOT**
+{% include female_actors_10perc.html %}
 
 As we can see, the plot suggests that there is a permenent increase of the proportion of female actors among well-known actors, independent of the feminist movement. We perform once again a Chow test on the proportion of **well-known** female actors **during** the feminist movement and **after** the feminist movement, which yields a $$p-value>0.05$$. Therefore, we don't have enough evidence to suggest any structural breakpoint.
 
@@ -149,7 +149,7 @@ As a small summary, it is interesting to note that we observe that among all fem
 ## Distribution of Recognition among genders
 Having an overall Recognition coefficient for every actor, we can inspect the distribution of these overall Recognition coefficients among female and male actors. This could be done to explore if recognition is evenly distributed between female and male actors. 
 
-**PLOT**
+{% include male_female_recognition.html %}
 
 As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender. We have that for each density, $$\int_{0}^{x} f(t) dt$$ represents the probability to have a recognition coefficient below $$x$$.
 
