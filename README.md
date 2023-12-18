@@ -10,19 +10,23 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 # Actor’s Recognition
 
-We've all certainly always got into debates like: "No! This actor is more worldwide recognized than this one!" or things like: "I don't agree, I think this actor is the most known ever!" We've come to help! To mitigate any doubt, the idea would be to quantify an Actor's Recognition and study its evolution. Let's start walking you through how we do that. In our analysis, we consider that an Actor's recognition depends on the revenue, quality and popularity of the movies the corresponding Actor acts in. Indeed, if an Actor is very well-known, he would be majoritarly acting in movies of high revenue and high popularity. On the other hand, a not-so recognized Actor would be in the major part of his career in movies that are not very well-known, i.e. that do not have very high revenues and that are not very popular. To account for movie revenue we use the movie Box-office while adapting its value with yearly inflation rates to have the same monetary scale for comparison. Furthermore to account for quality and popularity, we use IMDb ratings, IMDb rating would not only qantify the cinematic quality of a movie but also its popularity, since IMDb rating are done by "normal movie lovers" (CHANGE) and not by professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. What is necessary now is that we define a recognition coefficient ($$RC$$)  to asses the recognition of an actor. Let us now define some coefficients that will be relevant to our analysis.
+Ever found yourself caught up in those spirited debates about which actor is the most globally recognized? Well, here's our attempt to bring some clarity to those lively discussions by quantifying an actor's recognition and exploring how it evolves over time. Let's take you behind the scenes of our recognition assessment.
 
-In our methodology for assessing an actor's recognition over time, we introduce the concept of a movie recognition coefficient ($$RC_{movie}$$). This coefficient captures an actor's recognition in a specific year and movie. To calculate this coefficient, we calculate a movie coefficient ($$MC$$) as the average of the normalized movie rating and box office revenue scores:
+Let's start walking you through how we do that. In our analysis, we assert that an actor's recognition is contingent on the revenue, quality, and popularity of the movies they star in, as well as their relative importance in these films. A highly recognized actor tends to feature predominantly in high-revenue, popular movies, often in significant roles. Conversely, a less recognized actor is likely to have a career characterized by lesser-known movies, lower revenues, and less popularity. We account for movie revenue using box office figures, normalized with yearly inflation rates to ensure a consistent monetary scale for comparison. Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
+
+To create a recognition coefficient ($$RC$$) for assessing an actor's recognition, we first introduce the concept of a a movie coefficient ($$MC$$) which is the average of the normalized movie rating and box office revenue scores:
 
 $$MC(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
 
 Here, $$Normalized \_ Revenue(actor, year, movie)$$ and $$Normalized \_ Rating(actor, year, movie)$$ represent the normalized rating and box office revenue scores, respectively.
 
-Since the importance of every actor is not the same in the same movie, we estimate the actor's importance in a given movie by analysing the plot summary of the movie and counting the number of times this actor is mentioned or referenced in the summary. We divide that value by the highest number of mentions to give an estimate between 0 and 1 of how important the character is important in the movie, having then an importance coefficient ($$IC$$). We then use this actor importance in a movie to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
+Considering that an actor's importance in a movie varies, we introduce an importance coefficient ($$IC$$) estimated by analyzing the plot summary and counting the actor's mentions. This coefficient is then used to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
 
 $$RC_{movie}(actor, year, movie) = MC(actor, year, movie) \times (1 + IC(actor, year, movie))$$
 
-To gauge an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
+This coefficient ($$RC_{movie}$$) captures an actor's recognition in a specific year and movie
+
+To assess an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
 $$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} RC_{movie}(actor,year,{movie}_i)$$
 
@@ -41,21 +45,22 @@ $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{y
 Here, $$Y$$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
 
 
-After defining these coefficients, we can now delve into our analysis of Actors' Recognition. First, since we have a yearly $$RC$$ for every actor, it would be interesting to examine the mean-magnitude of recognition every year, here's a plot showing this.
+## Analysis of Actors' Recognition
+Now that we have defined the coefficients, let's dive into the analysis of Actors' Recognition. First, we explore the mean magnitude of recognition each year, as depicted in the following plot:
 
 {% include recognition_plot.html %}
 
-RESULTS:
-Doing a Pearson test on this aggregated data, we find a $$p-value=10^{-31} < < 0.05$$. This means that we have strong evidence to reject the null-Hypothesis that suggests that there is no correlation between the Year and the Average Recognition Coefficient. This would suggest that with time the average "Magnitude of Recognition" of actors increases, i.e. the revenue and rating of movies increases with time, suggesting that actors become more and more well-recognized and Cinema is taking a bigger part in society. That is indeed what we see in the plot, where we see that thr average recognition coefficient is increasing with time.
+Conducting a Pearson test on this aggregated data yields a p-value of $$10^{-31} < < 0.05$$. This strong evidence allows us to reject the null hypothesis, suggesting a correlation between the year and the Average Recognition Coefficient. Consequently, the plot supports the idea that the average "Magnitude of Recognition" of actors increases over time, indicating a rise in movie revenue and ratings. This suggests that actors become more widely recognized, signifying the growing impact of cinema on society.
 
+Examining the graph, it's apparent that there is a significant change in the way the average recognition coefficient increases post-1970.
 
+To validate this suspicion, a Chow test is performed, examining if the coefficients in two regression models on different data regions are equal. The obtained p-value is $$<0.05$$, leading us to reject the null hypothesis. This supports the assertion that a structural break point exists in the data, indicating a surge in actor recognition post-1970.
+Consequently, we conclude that starting from 1970, actors experience even greater recognition, signaling a booming period for cinema.
 
-Looking at the graph, we suspect that there is a strong change in the way the average recognition coefficient increases post-1970. 
+This surge in recognition post-1970 can be attributed to two pivotal historical factors:
 
-To be sure of that, we can perform a Chow test, which tests if the coefficients in two different regression models on different regions of the data are equal. Performing the test, we get a $$p-value=  < < 0.05$$. Since the p-value is smaller than 0.05, we can reject the null hypothesis of the test. This means we have sufficient evidence to say that a structural break point is present in the data. We can say that starting 19770, actors are getting even more recognized and the Cinema is booming, this is boom can be caused by two important historical factors:
-
-- The Blockbuster Phenomenon, "Jaws" (1975): Directed by Steven Spielberg, is often considered the first blockbuster film, changing the landscape of film distribution and marketing. Furthermore the release of "Star Wars" in 1977 (directed by George Luca) revolutionized the science fiction genre and became a cultural phenomenon, setting new standards for the movie industry and how to merchandise it.
-- The second reason could be the invention of VHS (short for Video Home System) in 1976, which allowed audiences to watch films at home, transforming the industry's distribution model and making Cinema more accessible.
+- The Blockbuster Phenomenon (Jaws, 1975): Directed by Steven Spielberg, "Jaws" is often hailed as the first blockbuster film, revolutionizing film distribution and marketing. The subsequent release of "Star Wars" in 1977, directed by George Lucas, further transformed the science fiction genre and became a cultural phenomenon, setting new standards for the movie industry and its merchandising.
+- Invention of VHS (1976): The introduction of VHS (Video Home System) in 1976 allowed audiences to watch films at home, reshaping the industry's distribution model and making cinema more accessible to a wider audience.
 
 <p align="center">
   <img src="images/STAR_WARS.jpg" width="600" alt="Image 1">
@@ -66,52 +71,53 @@ To be sure of that, we can perform a Chow test, which tests if the coefficients 
 </p>
 
 
-In the meantime we see also some decrease, this likely due to the fact that in the most recent years (until 2012), the data is not very much up to date.
+In the meantime we see also some decrease, which is likely attributable to the data not being as up-to-date.
 
-After checking the Actor Recognition through the years, let us move on to the more exciting part: Evaluating the overall recognition of actors. We present here a list of Actors ranked by most recognized to less recognized. You can try to find your favorite actor and see how is he ranked. Also, as a small game, considering all the actors you know, try to find the less known of them in this list!
+Having explored the evolution of Actor Recognition over the years, let's now dive into the more thrilling aspect: evaluating the overall recognition of actors. The following list presents actors ranked from the most recognized to the least recognized. Take a moment to find your favorite actor and discover their rank. As a small game, consider all the actors you know and try to identify the less known ones in this list!
+
 
 
 {% include Actor_table.html %}
 
 
-We hope that you found your favorite actors among this list 😀.
- 
-The above table provides a glimpse into the top well-recognized actors, showcasing their General Recognition Coefficients. Notably, in the first rankings the list features both contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Also, sadly but intuitivly, we see that the number of female actors is very minorr. Showcasing the still existing dominace of well-known male actors.
-This ranking highlights the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
+We hope you've spotted your favorite actors among this list 😀.
 
-Moving on, having this list of actors, we can try to visualize the distribution of only the top 10% Well-recognized of these actors. Are the modern-day actors more present among these 10%?
+ 
+This table offers a snapshot of the most recognized actors, ordered by their General Recognition Coefficients. Notably, the rankings feature a mix of contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Unfortunately, but not surprisingly, the representation of female actors in the rankings is minimal, underscoring the enduring dominance of well-known male actors. This ranking serves as a testament to the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
+
+Next, armed with this list of actors, let's visualize the distribution of only the top 10% most well-recognized actors. Are modern-day actors more prevalent among this elite 10%?
 
 {% include well_recognized_actors_plot.html %}
 
-Indeed as we can imagine, we see that among these 10% of actors, their majority is present in modern-days. Once again, we see this final decrease we saw before, likely due to the fact that in the most recent years (until 2012), the data is not very much up to date. Moreover, we can also see this sudden increase in number of actors post-1970, which is likely to be due to the reasons we explained before.
-
+As anticipated, we observe that the majority of actors in this top 10% are from modern times. Once again, we note the final decrease, likely due to the data not being very up-to-date in the most recent years until 2012. Additionally, the sudden increase in the number of actors post-1970 aligns with the previously explained reasons.
 
 # Actor Recognition Longevity
 
-Now that we had a timely approach to Actors' Recognition, let's now see how this Recognition lasts over time. The idea is to examine the span of the actors' Recognition through time. In other words, we are trying to find the year in which the actor started to be well-recognized and the year this recognition "ended". The criteria for determining these periods involve selecting the range of years in which the Actor Yearly Recognition Coefficient surpasses a defined threshold. This threshold is set at 50% of the actor's highest recognition coefficient score, providing a concise measure of the actor's sustained impact over time. We can see below the plot showing the average span of recognition through the years.
+Shifting to a more longitudinal perspective on Actors' Recognition, let's examine how this recognition lasts over time. The goal is to explore the span of actors' recognition through different periods. Specifically, we aim to identify the years when an actor began to be well-recognized and when this recognition "ended". This involves selecting the range of years where the Actor Yearly Recognition Coefficient exceeds a designated threshold. This threshold is set at 50% of the actor's highest recognition coefficient, providing a concise measure of the actor's sustained recognition over time. The plot below illustrates the average span of recognition through the years.
 
 {% include average_span_recognition_plot.html %}
 
-We observe that actors starting to be well-recognized after 1970 have decreasingly small spans of recognition. This is due to the fact the data we have ends in 2012, this means that these actors are probably still acting after 2012 but we don't have the corresponding data. Therefore the Last Year of recognition of these actors is considered to be around 2012 as we can see in the following histogram
+We observe that actors starting to be well-recognized after 1970 have decreasingly small spans of recognition. This is attributed to the data ending in 2012, implying that these actors likely continued their careers post-2012, but corresponding data is unavailable. Hence, the Last Year of Recognition for these actors is considered around 2012, as depicted in the following histogram.
 
 {% include last_year_recognition_histogram.html %}
 
-In order to evaluate the correlation between the average recognition span and first year of recognition, we use only the data before 1970, since the decrease of recognition span after 1970 is not reflective of the reality. Therefore, we fit a linear regression on spans starting before 1970.
+To evaluate the correlation between the average recognition span and the first year of recognition, we use only the data before 1970, as the decrease in recognition span after 1970 is not reflective of the reality. Therefore, we fit a linear regression on spans starting before 1970.
 
 {% include fitted_average_span_recognition_plot.html %}
 
-Based on the above graph and the Pearson test we do (which gives us a $$p-value= 0.0008<0.05$$ ), we observe a trend of increase in the average span of recognition for actors (before 1970). This result suggests that with time actors tend to have longer periods of recognition. This could be attributed to several factors like increase in quality of health and more late retirements.
+Based on the above graph and a Pearson test (yielding a p-value $$<0.05$$), we observe a trend of an increase in the average span of recognition for actors before 1970. This result suggests that, over time, actors tend to enjoy longer periods of recognition. This could be attributed to various factors such as improvements in health and later retirements.
 
 ## Recognition coefficient of specific actors
 As an interesting step, we can also inspect the evolution of the recognition coefficient of different actors:
 
 {% include specific_actors.html %}
 
-From the graphs above, we can see how the Recognition of different actors varies with time:
-- Michael Caine: We can see that Michael Caine has a very long span of recognition, starting to be well-recognized around 1960 until after 2012. It is also interesting to notice that for the period 1990-2000, he acted in less-succesful movies, but then he had his recognition increase again.
-- John Wayne: The second plot with John Wayne is also very interesting since it allows to visualize the Recognition of an actor that stopped to be well-recognized. We can see how his recognition coefficient decreases with time abruptly after 1979, which is in fact the date of his death
+From the graphs above, let's inspect the evolution of the recognition coefficient for different actors:
 
-Now, your turn! You can see the plot of the evolution of the recognition of your favorite actor. Try 
+- Michael Caine: The recognition coefficient for Michael Caine exhibits a remarkable longevity, starting to be well-recognized around 1960 and continuing beyond 2012. Notably, there is a dip in recognition during the 1990-2000 period, possibly linked to his involvement in less successful movies during that time. However, his recognition rebounds in subsequent years.
+- John Wayne: The second plot featuring John Wayne provides a unique perspective as it visualizes the recognition of an actor who ceased to be well-recognized. We witness a sharp decline in his recognition coefficient after 1979, aligning with the year of his death.
+
+Now, it's your turn! Explore the plot showcasing the evolution of the recognition of your favorite actor. Try the following interesting example:
 
 **INTERESTING EXAMPLES**
 
@@ -119,54 +125,62 @@ Now, your turn! You can see the plot of the evolution of the recognition of your
 
 # Gender representation in Cinema over time
 
-As a first step to our analysis, let us inspect the proportion of female and male actors over time.
+To start our analysis, let's examine the proportion of female and male actors over time.
+
 
 {% include male_female_proportion.html %}
 
-As we can see, the proportion of male actors is predominant and is equal nearly to the double of the proportion of female actors throughout time. However, are there some interesting trends that changed throughout time? Did big historical events, like the Feminist Movement, have an impact on female representation in Cinema?
+As evident from the chart, the proportion of male actors is significantly higher, almost double that of female actors throughout the years. However, are there discernible trends that have evolved over time? Have major historical events, such as the Feminist Movement, influenced the representation of females in cinema?
 
 ## Impact of the Feminist movement on female representation in Cinema
-The second wave feminist movement, prominent in the 1960s and 1970s, advocated for gender equality and reproductive rights. It gained momentum in the early 1960s, notably sparked by the publication of Betty Friedan's "The Feminine Mystique" in 1963, while its influence gradually waned by the early 1980s. As we know the Feminist movement had a great impact on decreasing gender-based discrimination, like by the Equal Pay Act of 1963, and, Title IX of 1972, an Education Amendment which prohibits gender-based discrimination in educational programs and activities. In this section, we try to explore the impact of this movement on female representation in Cinema and to observe the evolution of female representation during and after this period as it can provide insights into societal shifts and the progress made toward gender parity in cinema.. In order to do that, we divide the data into three parts that are interesting to analyze:
-- Before the feminist movement: from 1914 to 1963.
-- During the feminist movement: from 1963 to 1980.
-- After the feminist movement: from 1980 to 2012.
-- 
-After that, we fit a regression line on the proportion of female actors for each one of these periods.
+The second wave feminist movement, prominent in the 1960s and 1970s, advocated for gender equality and reproductive rights. It gained momentum in the early 1960s, notably sparked by the publication of Betty Friedan's "The Feminine Mystique" in 1963. Its influence gradually decreased by the early 1980s. The Feminist movement had a profound impact on decreasing gender-based discrimination, exemplified by the Equal Pay Act of 1963 and Title IX of 1972—an Education Amendment prohibiting gender-based discrimination in educational programs and activities.
 
+In this section, we aim to explore the impact of this movement on female representation in cinema and observe the evolution of female representation during and after this period. This analysis can provide insights into societal shifts and progress made toward gender parity in cinema. We divide the data into three segments for analysis:
+
+- Before the Feminist Movement (1914-1963): Examining the early years leading up to the Feminist Movement.
+- During the Feminist Movement (1963-1980): Analyzing the period when the movement was at its peak.
+- After the Feminist Movement (1980-2012): Investigating the years following the peak of the movement.
+- 
+Following this, we fit a regression line to the proportion of female actors for each of these periods.
 {% include female_actors.html %}
 
-We observe a decrease in female representation between 1914 and 1963 and an increase in female representation between 1980 and 2012. Very small p-values ($$p-value << 0.05$$) corresponding to the regression line **before** and **after** the feminist movement suggest that there is indeed a correlation between the dates of the feminist movement and the observed increase. On the other hand, for the regression **during** the feminist movement, we get a $$p-value>0.05$$ suggesting that there is no significant correlation during the movement itself. Furthermore, performing a Chow test on the proportion of female actors during the feminist movement and after the feminist movement yields a $$p-value < 0.05$$ suggesting that we can reject the null hypothesis of the test, meaning we have sufficient evidence to say that a structural break point is present in the between during the feminist movement and after the feminist
+We observe a decrease in female representation between 1914 and 1963 and an increase in female representation between 1980 and 2012. The very small p-value (p−value$$<0.05$$) associated with the regression line after the feminist movement indicate a significant correlation between the dates after the feminist movement and the observed increase. On the other hand, during the feminist movement, the p-value exceeds 0.05, suggesting no substantial correlation during this period.
 
-Furthermore, it would be interesting to examine the proportion of female actors among the 10% most well recognized actors. Does the trend of well-known female actors follow the one of all female actors? Or, are well-known female actor representation follow different trends through time?
+Conducting a Chow test on the proportion of female actors during and after the feminist movement yields a p−value $$<0.05$$. This result leads us to reject the null hypothesis, providing compelling evidence of a structural break point between the periods during and after the feminist movement.
 
-To examine that, we select the top 10% well-known actors from the list shown above and plot the proportion of females among those actors through time.
+Moving beyond overall trends, we shift our focus to the top 10% most well-recognized actors to ascertain if the trends among this subset mirror those of the entire female actor population. The plot below illustrates the proportion of female actors among the 10% most recognized actors over time:
 
 {% include female_actors_10perc.html %}
 
-As we can see, the plot suggests that there is a permenent increase of the proportion of female actors among well-known actors, independent of the feminist movement. We perform once again a Chow test on the proportion of **well-known** female actors **during** the feminist movement and **after** the feminist movement, which yields a $$p-value>0.05$$. Therefore, we don't have enough evidence to suggest any structural breakpoint.
+The plot suggests a consistent increase in the proportion of female actors among well-known actors, independent of the feminist movement. A subsequent Chow test on the proportion of well-known female actors during and after the feminist movement yields a p−value>0.05. Consequently, we lack sufficient evidence to suggest any structural breakpoint in this subset.
 
-As a small summary, it is interesting to note that we observe that among all female actors we observe an increase of proportion of female actors thanks to the feminist movement. On the other hand, we observe that the proportion of female actors among well-known actors follows another behaviour, this proportion seems to increase through time independently from the feminist movement. 
+In summary, while the proportion of female actors among all females increases, likely due to the feminist movement, the proportion of female actors among well-known actors follows a distinct pattern, steadily rising over time independent of the feminist movement.
+
 
 ## Distribution of Recognition among genders
-Having an overall Recognition coefficient for every actor, we can inspect the distribution of these overall Recognition coefficients among female and male actors. This could be done to explore if recognition is evenly distributed between female and male actors. 
+To assess the distribution of overall recognition coefficients among female and male actors, we've compiled histograms illustrating the recognition coefficients for each gender:
 
 {% include male_female_recognition.html %}
 
-As we can see, the number of female actors and male actors is not the same, however we observe that the two histograms could have similar trends. In order to compare the distribution of recognition, we plot the density function for each gender. We have that for each density, $$\int_{0}^{x} f(t) dt$$ represents the probability to have a recognition coefficient below $$x$$.
+While the number of female and male actors differs, there are apparent similarities in the trends. To compare the recognition distributions, density functions for each gender are plotted. The integral of the density function from 0 to a given value represents the probability of having a recognition coefficient below that value, i.e. for each density, $$\int_{0}^{x} f(t) dt$$ represents the probability to have a recognition coefficient below $$x$$.
 
 **OR CCDF**
 
 {% include recognition_densities.html %}
 
-From the plot above, we see that, since the density of female actors has a higher peak, the probability to have low recognition coefficients (below 0.04, for example) is larger for female than for male actors. In other words, male actors that have higher recognition amplitudes are more numerous than female actors. Moreover, to compare if the two density distributions are alike, if they can be sampled from the same distribution, we perform a Kolmogorov–Smirnov test that yields a $$p-value<0.05$$. This means that we have enough evidence to say that the two density distributions are not sampled from the same distribution and that there is a significant difference in these density distributions.
+From the density plot above, it's evident that the density peak for female actors is higher, indicating a greater likelihood of having lower recognition coefficients, especially below 0.04. This suggests that a larger proportion of female actors tend to have lower recognition amplitudes compared to their male counterparts. In essence, there are more male actors with higher recognition amplitudes.
+
+To assess the statistical significance of these differences, we conduct a Kolmogorov–Smirnov test. The test yielded a p-value less than 0.05, providing sufficient evidence to reject the null hypothesis. This result indicates that the two density distributions (for male and female actors) are not sampled from the same distribution. In simpler terms, there is a statistically significant difference between the recognition coefficient distributions for male and female actors.
 
 ## Actor first-appearance among genders
 
-Another intersting aspect we can inspect is the debut age of the different actors. It would be interesting to find out wether there is a significant difference between the age at which male and female actors start acting. To do the following, we visualize a histogram with the different ages at which male and female actors start acting
+Another intriguing facet to explore is the debut age of actors and whether there is a significant difference in the age at which male and female actors commence their careers. To investigate this, we present a histogram visualizing the distribution of ages at which actors make their first appearances.
 
 {% include 1st_appearance_hist.html %}
 
-As we can see, this plot suggests, that is a difference in means. In other words, female actors seem to start acting earlier than males. Performing a t-test confirms this hypothesis having a very small p-value ($$p-value <<0.05$$), this suggests that there is enough evidence to say there is a significant difference between the mean first appearance age for female actors and for male actors. The plot below highlights this significant difference, showing a mean first appearance age of 24.2 years for female actors anf 29.0 years for male actors.
+The histogram suggests a noticeable difference in the debut ages of male and female actors. Specifically, it indicates that female actors tend to start their careers at an earlier age compared to their male counterparts. This observation is further supported by a t-test, which yields an extremely small p-value (p−value<<0.05). This compelling result provides strong evidence to assert a significant difference between the mean first-appearance ages for female and male actors.
+
+The subsequent plot highlights this difference, showing a mean first appearance age of 24.2 years for female actors and 29.0 years for male actors:
 
 {% include 1st_appearance_ci.html %}
 
