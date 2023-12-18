@@ -180,7 +180,8 @@ To delve into this investigation, comprehensive data on actors' ethnicities is i
 
 However, the prevalence of missing values should not impede our exploration of ethnicities. Operating under the assumption that these gaps occur randomly, akin to a randomized control experiment, we can reasonably exclude them as confounding factors that might influence our analysis outcomes. This perspective empowers us to proceed with our study on ethnic representation in cinema, acknowledging and addressing the challenges posed by missing data.
 
-Moreover, the Freebase IDs correspond to 263 different ethnicity names, to have a targetted and concise analysis, we map these 263 ethnicities to only 7 unique ethnicities (africans, arabics, asians, europeans, hispanics, jewish, natives).
+Moreover, the Freebase IDs correspond to 263 different ethnicity names. To streamline and focus our analysis, we employ a mapping system to categorize these 263 ethnicities into six distinct groups : Africans, Arabs, Asians, Europeans, Hispanics, and Natives.
+
 
 Moving on, 
 
