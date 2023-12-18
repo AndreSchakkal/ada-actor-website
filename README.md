@@ -190,33 +190,43 @@ Moving on, let us examine the number of actors per ethnicity in the data we have
 
 As we can see, with the exception of missing ethnicity entries, European actors significantly outnumber actors from other ethnicities. Here, European actors encompass individuals of European descent, including both native European actors and American actors of European descent.
 
-Let us now see how ths number of actors from the 3-most represented ethnicities vary with time.
+Let's now examine how the number of actors from the three most represented ethnicities varies over time.
 
 {% include total_actors_ethnicity.html %}
 
 {% include actors_ethnicity.html %}
 
-Since we are interested in the representation of African actors in Cinema, let us take a look at the third plot.
-Similarly to the other plots, we can see that the number of actors of this ethnicity increases with time. However, for African actors, we observe a sudden increase in their number around 1970. This sudden increase is not perceived in the other plots. This sudden increase could be attributed to the Civil Right Movement which started in 1954 and ended in 1968.
+Since we are interested in the representation of African actors in Cinema, let us take a look at the third plot. Similar to the other plots, we observe a consistent increase in the number of African actors over time. However, a notable surge in their representation around 1970 catches our attention, and this sudden uptick may be attributed to the influence of the Civil Rights Movement, which started in 1954 and ended in 1968.
 
-In the meantime, we can see that that the total number of actors (regardless of the ethnicity) increases with time. Therefore, the sudden increase in African actors could be a result of this increase. In order to remove the bias of increasing number of actors, we can examine the **proportion** of actors of each ethnicity instead of their **count**. Examining the **proportion** of African actors in Cinema through the years, could help clarify the impact of the Civil rights movement on their representation.
+It's essential to note that the total number of actors, regardless of ethnicity, also shows a continuous increase over time. Consequently, the sudden spike in the number of African actors could be a byproduct of this overall rise. To eliminate the potential bias from the increasing number of actors, we pivot our analysis to examine the proportion of actors from each ethnicity rather than their count. This shift allows us to better understand the impact of the Civil Rights Movement on the representation of African actors in cinema.
+
 
 {% include actors_ethnicity_proportion.html %}
 
 
-Contrary to the count plots where we had an increase of number of actors for all the ethnicities, in these plots, we can see that the proportions of Indian actors and Jewish actors increase for some time, but then they start to decrease, which is something we could not predict from the previous plots.
+In contrast to the count plots, where we observed a consistent increase in the number of actors for all ethnicities, the proportion plots reveal intriguing patterns. Specifically, for African actors, a distinctive pattern emerges, showcasing a discernible decrease in their proportion until around 1970, coinciding with the sudden increase that aligns with the Civil Rights Movement.
 
-Regarding the African actors, we can see clearly that there is a clear decrease in their proportion until around 1970, where we see the same sudden increase that could be a result of the Civil rights movement.
+To substantiate the hypothesis of a significant increase in the proportion of African-American actors, we apply linear regression to analyze the proportion of African-American actors during three distinct time intervals:
 
-In order to validate the proposition that there is indeed a significant increase in the proportion of African-American actors, we apply linear regression on the proportion of Afircan-American actors during three intervals of time:
-- Before the Civil rights movement (Before 1954)
-- During the Civil rights movement (After 1954 and before 1968)
-- After the Civil rights movement (After 1968)
+- Before the Civil Rights Movement (Before 1954)
+- During the Civil Rights Movement (After 1954 and before 1968)
+- After the Civil Rights Movement (After 1968)
 
 {% include african_actors_perc.html %}
 
 
-# Remarks
+From the analysis presented in the plot above, several key insights emerge. Before the Civil Rights Movement, there is a discernible decrease in the proportion of African actors. During the Civil Rights Movement, there is a transition period characterized by a nearly-horizontal trend.
+
+Crucially, after the end of the Civil Rights Movement, a distinct and significant increase in the proportion of African actors becomes apparent. It is noteworthy that the Pearson Coefficient, specifically calculated for values after the Civil Rights Movement, indicates a statistically significant correlation, with a p-value less than 0.05.
+
+Furthermore, a substantial increase is observed from the intercept of the regression line during the Civil Rights Movement to the intercept of the regression line after the Civil Rights Movement. This difference is highlighted at the extremities of the interval, where there is an approximate 5% increase on the different regression lines when transitioning from the last point during the Civil Rights Movement (year=1968) to the first point after the Civil Rights Movement (year=1969). This statistical evidence supports the proposition of a noteworthy and statistically significant rise in the proportion of African actors in cinema following the Civil Rights Movement.
+
+
+The bar plot below illustrates the evolution of the proportion of different ethnicities in 10-year intervals. In addition to the already observed increase in African actors, there is a notable surge in the proportion of Asian actors over time. Native actors also show a relative increase in their representation, and even for Arab actors, a modest uptick is noticeable. All these trends are juxtaposed against the proportion of European actors, indicating a transformative shift in world cinema towards greater inclusivity. This evolution reflects a positive trajectory, embracing actors with diverse ethnic backgrounds and contributing to a more representative and inclusive landscape in the realm of cinema.
+
+
+
+# Remarks 
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
