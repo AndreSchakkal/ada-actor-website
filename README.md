@@ -3,7 +3,6 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 Throughout this project several datasets, APIs, and webpages were used. A brief presentation of each can be found in the [Resources](example.md) page.
 
 Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition. Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history. Third, our analysis extends to gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods. Moving forward, we delve into the diverse ethnic representation in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to forecast the transformative shifts in their presence on the cinematic stage.
-s
 
 # Actor’s Recognition
 
