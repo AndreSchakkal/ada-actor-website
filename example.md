@@ -1,123 +1,23 @@
----
-layout: default
----
+# Resources
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Datatsets
+- [CMU Movie Summary Corpus](https://www.cs.cmu.edu/~ark/personas//): The CMU Movie Summary Corpus is a comprehensive dataset providing information about movies, including box office revenue, genre, release date, runtime, language, actors, and plot summaries.
 
-[Link to another page](./another-page.html).
+- [IMDb Movies Dataset](https://developer.imdb.com/non-commercial-datasets/): The IMDb Movies Dataset is a valuable resource for incorporating IMDb ratings into our analysis. It also helps enhance our dataset by filling in missing information not covered by the CMU Movie Summary Corpus.
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+- [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download&select=movies_metadata.csv) : The Movies Dataset is another dataset containing information about movies. We leverage this dataset to supplement our analysis with additional data that may be absent from the CMU Movie Summary Corpus.
 
 
-### Definition lists can be used with HTML syntax.
+- [Mojo Movie](https://www.kaggle.com/datasets/kalilurrahman/top-box-office-revenue-data-english-movies/data?select=boxofficemojoustop1000.tsv) : The Mojo Movie dataset provides information on top box office revenue for English movies. It complements our analysis by filling potential gaps in the CMU Movie Summary Corpus.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+- [Global Database of Inflation](https://www.worldbank.org/en/research/brief/inflation-database): The Global Database of Inflation is a dataset containing information on world inflation. We use it to normalize movie revenues, ensuring a consistent monetary scale over the years.
 
-```
-The final element.
-```
+
+
+## APIs
+- [Knowledge Graph API](https://developers.google.com/knowledge-graph?hl=fr) We utilize the Knowledge Graph API as a replacement for the deprecated Freebase API. This helps us map Freebase IDs of ethnicities to their corresponding names.
+
+
+## Webpages
+- [List of African-American actors](https://en.wikipedia.org/wiki/List_of_African-American_actors), [List of Hispanic and Latino American actors](https://en.wikipedia.org/wiki/List_of_Hispanic_and_Latino_American_actors), and [List of Italian-American actors](https://en.wikipedia.org/wiki/List_of_Italian-American_actors): Wikipedia pages we use to supplement our analysis with additional actors' ethnicities that may be absent from the CMU Movie Summary Corpus.
