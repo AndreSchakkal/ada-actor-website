@@ -123,31 +123,19 @@ From the graphs above, let's inspect the evolution of the recognition coefficien
 - Michael Caine: The recognition coefficient for Michael Caine exhibits a remarkable longevity, starting to be well-recognized around 1960 and continuing beyond 2012. Notably, there is a dip in recognition during the 1990-2000 period, possibly linked to his involvement in less successful movies during that time. However, his recognition rebounds in subsequent years.
 - John Wayne: The second plot featuring John Wayne provides a unique perspective as it visualizes the recognition of an actor who ceased to be well-recognized. We witness a sharp decline in his recognition coefficient after 1979, aligning with the year of his death.
 
-Now, it's your turn! Explore the plot showcasing the evolution of the recognition of your favorite actor. Try the following interesting example:
-
-**INTERESTING EXAMPLES**
+Now, it's your turn! Explore the plot showcasing the evolution of the recognition of your favorite actor. 
 
 {% include Actor_recognition_graph.html %}
 
-**HOVER ON ACTOR NAME TO KNOW HIS STORY**
+Additionally, try the intriguing example below. Hover over the actors' names to uncover the narrative behind their recognition journeys:
 
-**SCANDALS**
-**DEATH**
-**BLOCKBUSTERS**
-**PREGRANCIES**
 
-- Charlie Sheen
-- Rob Lowe
-- Winona Ryder
-- Elizabeth Taylor
-- Richard Burton
-- Natalie Wood
-- Woody Allen
-- Ingrid Bergman
-- Mia Farrow
-- Sharon Stone
-- Mel Gibson
-- 
+
+
+
+
+
+
 
 # Gender representation in Cinema over time
 
@@ -307,6 +295,28 @@ In conclusion, our cinematic journey through time and recognition unveils a rich
 As we bid farewell to this cinematic exploration, it is clear that actors are not merely performers on screen; they are cultural reflections, influencers, and, in many ways, architects of the evolving narrative of human history. The enthralling world of cinema continues to be a canvas where diverse stories, voices, and faces converge, shaping the recognition of actors in ways that transcend time and resonate with the collective consciousness of humanity.
 
 # Remarks 
+
+**TALK ABOUT LIMITATIONS**
+
+**HOVER ON ACTOR NAME TO KNOW HIS STORY**
+
+**SCANDALS**
+**DEATH**
+**BLOCKBUSTERS**
+**PREGRANCIES**
+
+- Charlie Sheen
+- Rob Lowe
+- Winona Ryder
+- Elizabeth Taylor
+- Richard Burton
+- Natalie Wood
+- Woody Allen
+- Ingrid Bergman
+- Mia Farrow
+- Sharon Stone
+- Mel Gibson
+- Corey Feldman
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
