@@ -307,6 +307,9 @@ As we bid farewell to this cinematic exploration, it is clear that actors are no
 
 **TALK ABOUT LIMITATIONS**
 
+
+**ADD ACTOR PHOTOS TO THE HOVER, AND ADJUST BUBBLE POSITION**
+
 **HOVER ON ACTOR NAME TO KNOW HIS STORY**
 
 **SCANDALS**
