@@ -140,6 +140,18 @@ Now, it's your turn! Explore the plot showcasing the evolution of the recognitio
 **BLOCKBUSTERS**
 **PREGRANCIES**
 
+- Charlie Sheen
+- Rob Lowe
+- Winona Ryder
+- Elizabeth Taylor
+- Richard Burton
+- Natalie Wood
+- Woody Allen
+- Ingrid Bergman
+- Mia Farrow
+- Sharon Stone
+- Mel Gibson
+- 
 
 # Gender representation in Cinema over time
 
