@@ -1,10 +1,9 @@
 In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor's recognition and its longevity been influenced by specific attributes such as genre, ethnicity? Acting isn't an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
 
-[RESOURCES](example.md)
+Throughout this project several datasets, APIs, and webpages were used. A small presentation of each one of them can be found in the [Resources](example.md) page.
 
 **EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING**
 
-**PUT ALL USED DATASETS IN ANOTHER PAGE WITH THEIR EXPLANATION, REFER TO THIS PAGE HERE**
 
 **A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
 
@@ -289,6 +288,28 @@ As we can see, similarly to the previous plot, in early years European actors ar
 As we can see, similarly to the previous plot, in the early years, European actors overwhelmingly dominated the top 10% most recognized actors. Put simply, the majority of the most recognized actors were of European descent. However, over time, a transformative trend unfolds, showing an important increase in the proportion of actors from diverse ethnicities. In essence, the exclusive club of the most recognized actors is becoming more inclusive. It's becoming increasingly common to find well-known actors representing ethnicities beyond the European spectrum.
 
 Specifically, we notice that Post-Civil Rights movement (after 1970), the proportion of African actors among the most recognized experiences a substantial increase. Furthermore, a particularly interesting facet is the diminishing proportion of European actors among the top 10% most recognized. This proportion shrinks from a commanding 77.8% in the earliest available decade to a more balanced 51.4% in the latest available decade. This significant decrease of 26.4% underscores a positive evolution in public opinion. The shift reflects a growing acceptance and appreciation for well-known actors of diverse ethnicities, marking a positive step towards a more inclusive and representative entertainment industry.
+
+
+# Summary
+
+In the enthralling exploration of actor recognition and its evolution across the cinematic tapestry, our journey has unveiled a captivating narrative that spans genres, ethnicities, and pivotal moments in history. The intricate web of factors influencing an actor's recognition encompasses not only the quality and popularity of their movies but also the socio-cultural landscape and historical movements that shape human existence.
+
+## Evolution of Actor Recognition:
+Our analysis of actor recognition coefficients over time reveals a compelling trend – a surge in recognition post-1970, marked by the emergence of blockbusters like "Jaws" and the advent of home video with VHS. This era witnessed a transformative shift in the cinematic landscape, with actors experiencing unprecedented recognition, signaling the profound impact of cinema on society.
+
+## Actor Recognition Longevity:
+Delving into the longevity of actor recognition, our study indicates an increase in the average span of recognition for actors before 1970. This suggests that, over time, actors tend to enjoy more extended periods of recognition, possibly influenced by evolving societal norms, improved health, and delayed retirements.
+
+## Gender Representation:
+The exploration of gender representation in cinema unravels a nuanced tale. While the overall proportion of female actors lags behind their male counterparts, the influence of the Feminist Movement is evident. Post-1980, the proportion of female actors among the 10% most recognized rises, reflecting a positive trend towards greater inclusivity.
+
+## Ethnic Representation:
+The analysis of ethnic representation reveals a dynamic narrative shaped by historical movements. The impact of the Civil Rights Movement on the increased proportion of African actors is discernible, especially post-1970. The top 10% most recognized actors reflect a changing landscape, with European actors no longer dominating, signaling a shift towards greater diversity and inclusivity.
+
+## Conclusion
+In conclusion, our cinematic journey through time and recognition unveils a rich narrative of evolution and transformation. Actors, as integral components of the ever-evolving cinematic tapestry, mirror the shifts in societal values, historical movements, and the changing dynamics of the entertainment industry. While challenges such as gender disparities and gaps in ethnic representation persist, the trajectory points towards positive change and increasing inclusivity.
+
+As we bid farewell to this cinematic exploration, it is clear that actors are not merely performers on screen; they are cultural reflections, influencers, and, in many ways, architects of the evolving narrative of human history. The enthralling world of cinema continues to be a canvas where diverse stories, voices, and faces converge, shaping the recognition of actors in ways that transcend time and resonate with the collective consciousness of humanity.
 
 # Remarks 
 
