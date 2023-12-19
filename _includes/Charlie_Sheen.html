@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Bubble Example</title>
+  <style>
+    .actor-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .actor-name {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .bubble {
+      display: none;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      color: #555;
+      z-index: 1;
+      width: 1000px; /* Set the desired width */      
+    }
+
+    .actor-container:hover .bubble {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="actor-container">
+  <span class="actor-name">Charlie Sheen</span>
+  <div class="bubble">Charlie Sheen's recognition coefficient reflects a dynamic career marked by early success in the 1980s and 1990s with notable film roles such as "Platoon" and "Major League." However, a significant decline in recognition begins around 2006, coinciding with personal challenges, including substance abuse issues, legal troubles, a highly publicized divorce, and failure to participate in high-profile roles. The controversial exit from "Two and a Half Men" in 2011 and subsequent public fallout further contributed to a negative shift in public perception. Although Sheen attempted a television comeback with "Anger Management," the recognition coefficient continued to decrease, reflecting the challenges in reestablishing his public image. The data suggests that both personal and professional factors played a role in the fluctuations, ultimately contributing to a decline in Charlie Sheen's overall recognition from 2006 onwards.
+  </div>
+</div>
+
+</body>
+</html>
