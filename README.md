@@ -12,17 +12,25 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 Ever found yourself caught up in those spirited debates about which actor is the most globally recognized? Well, here's our attempt to bring some clarity to those lively discussions by quantifying an actor's recognition and exploring how it evolves over time. Let's take you behind the scenes of our recognition assessment.
 
-Let's start walking you through how we do that. In our analysis, we assert that an actor's recognition is contingent on the revenue, quality, and popularity of the movies they star in, as well as their relative importance in these films. A highly recognized actor tends to feature predominantly in high-revenue, popular movies, often in significant roles. Conversely, a less recognized actor is likely to have a career characterized by lesser-known movies, lower revenues, and less popularity. We account for movie revenue using box office figures, normalized with yearly inflation rates to ensure a consistent monetary scale for comparison. Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
+Let's start walking you through how we do that. In our analysis, we assert that an actor's recognition is contingent on the revenue, quality, and popularity of the movies they star in, as well as their relative importance in these films. A highly recognized actor tends to feature predominantly in high-revenue, popular movies, often in significant roles. Conversely, a less recognized actor is likely to have a career characterized by lesser-known movies, lower revenues, and less popularity. 
+
+We account for movie revenue using box office figures. These box office figures are normalized with yearly inflation rates to ensure a consistent monetary scale for comparison. The formula for this normalization is:
+
+$$Normalized \_ Revenue (year,movie) = Revenue(movie) / Cumulative \_ Inflation(year)$$
+
+Here, $$Cumulative_Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
+
+Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
 
 To create a recognition coefficient ($$RC$$) for assessing an actor's recognition, we first introduce the concept of a a movie coefficient ($$MC$$) which is the average of the normalized movie rating and box office revenue scores:
 
-$$MC(actor,year,movie) = \frac{Normalized \_ Revenue(actor,year,movie) + Normalized \_ Rating(actor,year,movie)}{2}$$
+$$MC(year,movie) = \frac{Normalized \_ Revenue(year,movie) + Normalized \_ Rating(year,movie)}{2}$$
 
-Here, $$Normalized \_ Revenue(actor, year, movie)$$ and $$Normalized \_ Rating(actor, year, movie)$$ represent the normalized rating and box office revenue scores, respectively.
+Here, $$Normalized \_ Revenue(year, movie)$$ and $$Normalized \_ Rating(year, movie)$$ represent the normalized and scaled rating and box office revenue scores, respectively.
 
 Considering that an actor's importance in a movie varies, we introduce an importance coefficient ($$IC$$) estimated by analyzing the plot summary and counting the actor's mentions. This coefficient is then used to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
 
-$$RC_{movie}(actor, year, movie) = MC(actor, year, movie) \times (1 + IC(actor, year, movie))$$
+$$RC_{movie}(actor, year, movie) = MC(year, movie) \times (1 + IC(actor, year, movie))$$
 
 This coefficient ($$RC_{movie}$$) captures an actor's recognition in a specific year and movie
 
