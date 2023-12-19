@@ -22,4 +22,4 @@
 ## Webpages
 - [List of African-American actors](https://en.wikipedia.org/wiki/List_of_African-American_actors), [List of Hispanic and Latino American actors](https://en.wikipedia.org/wiki/List_of_Hispanic_and_Latino_American_actors), and [List of Italian-American actors](https://en.wikipedia.org/wiki/List_of_Italian-American_actors): Wikipedia pages we use to supplement our analysis with additional actors' ethnicities that may be absent from the CMU Movie Summary Corpus.
 
-Click [here](andreschakkal.github.io/ada-actor-website/) to get back to the Datastory. 
+Click [here](https://andreschakkal.github.io/ada-actor-website/)https://andreschakkal.github.io/ada-actor-website/ to get back to the Datastory. 
