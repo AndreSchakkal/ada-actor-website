@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Bubble Example</title>
+  <style>
+    .actor-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .actor-name {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .bubble {
+      display: none;
+      position: absolute;
+      top: -0px;
+      left: 0%;
+      transform: translateX(0%);
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      color: #555;
+      z-index: 1;
+      width: 1000px; /* Set the desired width */      
+    }
+
+    .actor-container:hover .bubble {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="actor-container">
+  <span class="actor-name">Gérard Depardieu</span>
+  <div class="bubble">
+    Very controversial these days, Gérard Depardieu's career has witnessed significant fluctuations. He experienced a notable rise in recognition during the late 1970s and 1980s. However, the early 1990s saw a setback due to a controversial interview, impacting his image in the American market. Despite this, his involvement in movies such as "Astérix et Obélix contre César" (1999) and "102 Dalmatiens" (2000) led to a resurgence in his recognition coefficient, surpassing previous levels.
+  </div>
+</div>
+
+</body>
+</html>

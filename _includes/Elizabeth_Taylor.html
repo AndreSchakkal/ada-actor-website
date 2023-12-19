@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Bubble Example</title>
+  <style>
+    .actor-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .actor-name {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .bubble {
+      display: none;
+      position: absolute;
+      top: -0px;
+      left: 0%;
+      transform: translateX(0%);
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      color: #555;
+      z-index: 1;
+      width: 1000px; /* Set the desired width */      
+    }
+
+    .actor-container:hover .bubble {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="actor-container">
+  <span class="actor-name">Elizabeth Taylor</span>
+  <div class="bubble">
+    Elizabeth Taylor's an interesting example since it shows a decline of Recognition not caused by death. During the late 1950s, critical acclaim for roles in "Giant" and "Cat on a Hot Tin Roof" propelled her recognition to new heights. The early 1960s brought monumental fame with "Cleopatra" and a high-profile romance with Richard Burton. Their collaborations, including "Who's Afraid of Virginia Woolf?" in 1966, garnered critical acclaim and awards. However, the late 1960s marked a decline, attributed to industry changes, public scrutiny of Taylor's personal life, her divorce from Burton, evident in the decline during the late 1970s.
+  </div>
+</div>
+
+</body>
+</html>

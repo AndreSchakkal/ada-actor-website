@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Bubble Example</title>
+  <style>
+    .actor-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .actor-name {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .bubble {
+      display: none;
+      position: absolute;
+      top: -0px;
+      left: 0%;
+      transform: translateX(0%);
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      color: #555;
+      z-index: 1;
+      width: 1000px; /* Set the desired width */      
+    }
+
+    .actor-container:hover .bubble {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="actor-container">
+  <span class="actor-name">Daniel Radcliffe</span>
+  <div class="bubble">
+    In contrast to many actors, Daniel Radcliffe, best known for his iconic role as Harry Potter, experiences a remarkable surge in his Recognition Coefficient, soaring to unprecedented heights with the release of the blockbuster film series "Harry Potter." The trajectory shows a steep increase, coinciding with the debut of the first film in 2001 and subsequent sequels in 2002, 2004, 2005, and beyond.
+  </div>
+</div>
+
+</body>
+</html>
