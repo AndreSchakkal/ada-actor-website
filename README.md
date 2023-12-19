@@ -133,6 +133,9 @@ Now, it's your turn! Explore the plot showcasing the evolution of the recognitio
 
 {% include Actor_recognition_graph.html %}
 
+**HOVER ON ACTOR NAME TO KNOW HIS STORY**
+
+
 # Gender representation in Cinema over time
 
 To start our analysis, let's examine the proportion of female and male actors over time.
