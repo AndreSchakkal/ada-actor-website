@@ -135,6 +135,11 @@ Now, it's your turn! Explore the plot showcasing the evolution of the recognitio
 
 **HOVER ON ACTOR NAME TO KNOW HIS STORY**
 
+**SCANDALS**
+**DEATH**
+**BLOCKBUSTERS**
+**PREGRANCIES**
+
 
 # Gender representation in Cinema over time
 
