@@ -2,18 +2,8 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 Throughout this project several datasets, APIs, and webpages were used. A brief presentation of each can be found in the [Resources](example.md) page.
 
-Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition.
+Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition. Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history. Third, our analysis extends to gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods. Moving forward, we delve into the diverse ethnic representation in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to forecast the transformative shifts in their presence on the cinematic stage.
 
-Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history.
-
-Third, our analysis extends to gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods.
-
-Moving forward, we delve into the diverse ethnic representation in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to forecast the transformative shifts in their presence on the cinematic stage.
-
-
-**A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
-
-**RESEARCH QUESTIONS?**
 
 # Actor’s Recognition
 
@@ -199,8 +189,6 @@ To assess the distribution of overall recognition coefficients among female and 
 
 While the number of female and male actors differs, there are apparent similarities in the trends. To compare the recognition distributions, density functions for each gender are plotted. The integral of the density function from 0 to a given value represents the probability of having a recognition coefficient below that value, i.e. for each density, $$\int_{0}^{x} f(t) dt$$ represents the probability to have a recognition coefficient below $$x$$.
 
-**OR CCDF**
-
 {% include recognition_densities.html %}
 
 From the density plot above, it's evident that the density peak for female actors is higher, indicating a greater likelihood of having lower recognition coefficients, especially below 0.04. This suggests that a larger proportion of female actors tend to have lower recognition amplitudes compared to their male counterparts. In essence, there are more male actors with higher recognition amplitudes.
@@ -321,7 +309,6 @@ As we bid farewell to this cinematic exploration, it is clear that actors are no
 
 Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
 
-PUT INTERACTIVE PLOTS
+**A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
 
-PUT INTERACTIVE LIST WITH RANKED ACTORS (WHERE YOU CAN SCROLL AND FIND A SPECIFIC ACTOR NAME)
-https://www.convertcsv.com/csv-to-html.htm
+**RESEARCH QUESTIONS?**
