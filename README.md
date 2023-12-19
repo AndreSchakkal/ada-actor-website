@@ -250,17 +250,23 @@ The bar plot below illustrates the evolution of the proportion of different ethn
 
 ## Ethnicities of most-recognized actors
 
-Similar to our previous analysis, let's now focus on the top 10% most recognized actors and explore their ethnicities.
+Building upon our previous analysis, let's delve into the ethnicities of the top 10% most recognized actors.
 
 {% include ethnicity_10perc_hist.html %}
 
-As we can see once again, with the exception of missing ethnicity entries, European actors represent the majority of the most recognized actors. However, this time, the second-ranked ethnicity in terms of number is the African one, having the second biggest number of actors among the top 10% most recognized actors.
+While European actors still dominate among the most recognized, with the exception of missing ethnicity entries, a noteworthy shift emerges. African actors now claim the second spot, signaling a growing presence among the top 10% most recognized actors.
 
-Let us now examine how the 10%-most recognized actors are distributed among the ethnicities throughout time.
+
+Examining the distribution of the top 10% most recognized actors across ethnicities over the years provides further insights.
 
 {% include recognized_Ethnicities_Over_Decades.html %}
 
 As we can see, similarly to the previous plot, in early years European actors are the most present among the 10%-most recognized actors, i.e. the majority of the most recognized actors are European actors. However, with time, we see am increase in the proportion of actors of other ethnicities. In other words, the number of actors of other ethnicities among this elite 10% is increasing and it starts to be more common to have well-known actors of ethnicities different than European. Specifically, we can also see that following the Civil Rights movement (after 1970), the proportion of African actors among the most recognized is considerably increasing. Furthermore, it is interesting to note that the proportion of the European actors among the 10% most recognized actors goes from 77.8% in the first decade available to 51.4% in the last available decade, a considerable decrease of 26.4% highlighting the positive shift of public opinion for well-known actors towards a more inclusive opinion, blabla.
+
+
+As we can see, similarly to the previous plot, in the early years, European actors overwhelmingly dominated the top 10% most recognized actors. Put simply, the majority of the most recognized actors were of European descent. However, over time, a transformative trend unfolds, showing an important increase in the proportion of actors from diverse ethnicities. In essence, the exclusive club of the most recognized actors is becoming more inclusive. It's becoming increasingly common to find well-known actors representing ethnicities beyond the European spectrum.
+
+Specifically, we notice that Post-Civil Rights movement (after 1970), the proportion of African actors among the most recognized experiences a substantial increase. Furthermore, a particularly interesting facet is the diminishing proportion of European actors among the top 10% most recognized. This proportion shrinks from a commanding 77.8% in the earliest available decade to a more balanced 51.4% in the latest available decade. This significant decrease of 26.4% underscores a positive evolution in public opinion. The shift reflects a growing acceptance and appreciation for well-known actors of diverse ethnicities, marking a positive step towards a more inclusive and representative entertainment industry.
 
 # Remarks 
 
