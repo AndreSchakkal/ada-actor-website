@@ -1,8 +1,14 @@
 In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor's recognition and its longevity been influenced by specific attributes such as genre, ethnicity? Acting isn't an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
 
-Throughout this project several datasets, APIs, and webpages were used. A small presentation of each one of them can be found in the [Resources](example.md) page.
+Throughout this project several datasets, APIs, and webpages were used. A brief presentation of each can be found in the [Resources](example.md) page.
 
-**EXPLAIN MORE IN DETAIL THE PLAN OF WHAT WE ARE DOING**
+Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition.
+
+Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history.
+
+Third, our analysis extends to gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods.
+
+Moving forward, we delve into the diverse ethnic representation in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to forecast the transformative shifts in their presence on the cinematic stage.
 
 
 **A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
