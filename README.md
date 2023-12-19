@@ -133,6 +133,8 @@ Additionally, try the intriguing example below. Hover over the actors' names to 
 
 {% include Sean_Connery.html %}
 
+\n
+
 {% include Daniel_Radcliffe.html %}
 
 {% include Mel_Gibson.html %}
