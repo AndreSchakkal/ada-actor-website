@@ -131,9 +131,17 @@ Additionally, try the intriguing example below. Hover over the actors' names to 
 
 
 
+{% include Sean_Connery.html %}
 
+{% include Daniel_Radcliffe.html %}
 
+{% include Mel_Gibson.html %}
 
+{% include Gerard_Depardieu.html %}
+
+{% include Richard_Burton.html %}
+
+{% include Elizabeth_Taylor.html %}
 
 
 
