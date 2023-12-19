@@ -16,7 +16,7 @@ Let's start walking you through how we do that. In our analysis, we assert that 
 
 We account for movie revenue using box office figures. These box office figures are normalized with yearly inflation rates to ensure a consistent monetary scale for comparison. The formula for this normalization is:
 
-$$Normalized \_ Revenue (year,movie) = Revenue(movie) / Cumulative \_ Inflation(year)$$
+$$Normalized \_ Revenue (year,movie) = \frac{Revenue(movie)}{Cumulative \_ Inflation(year)}$$
 
 Here, $$Cumulative \_ Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
 
