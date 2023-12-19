@@ -5,6 +5,6 @@ title: "Actors Representation"
 description: "Explore actor’s Recognition, Gender and Ethnicity throughout history and time"
 navigation:
   - title: Home
-    url: /
+    url: README
   - title: Ressources
     url: example
