@@ -18,7 +18,7 @@ We account for movie revenue using box office figures. These box office figures 
 
 $$Normalized \_ Revenue (year,movie) = Revenue(movie) / Cumulative \_ Inflation(year)$$
 
-Here, $$Cumulative_Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
+Here, $$Cumulative \_ Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
 
 Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
 
