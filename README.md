@@ -29,7 +29,7 @@ Considering that an actor's importance in a movie varies, we introduce an import
 
 $$RC_{movie}(actor, year, movie) = MC(year, movie) \times (1 + IC(actor, year, movie))$$
 
-This coefficient ($$RC_{movie}$$) captures an actor's recognition in a specific year and movie
+This coefficient $$RC_{movie}$$ captures an actor's recognition in a specific year and movie
 
 To assess an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
 
