@@ -25,7 +25,7 @@ $$MC(year,movie) = \frac{Normalized \_ Revenue(year,movie) + Normalized \_ Ratin
 
 Here, $$Normalized \_ Revenue(year, movie)$$ and $$Normalized \_ Rating(year, movie)$$ represent the normalized and scaled rating and box office revenue scores, respectively.
 
-Considering that an actor's importance in a movie varies, we introduce an importance coefficient ($$IC$$) estimated by analyzing the plot summary and counting the actor's mentions. This coefficient is then used to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
+Considering that an actor's importance in a movie varies, we introduce an importance coefficient ($$IC$$) estimated by analyzing the plot summary and counting the actor's mentions, and it is then normalized to a scale ranging from 0 to 1. This coefficient is then used to calculate an actor's movie recognition coefficient ($$RC_{movie}$$) as follows:
 
 $$RC_{movie}(actor, year, movie) = MC(year, movie) \times (1 + IC(actor, year, movie))$$
 
