@@ -17,7 +17,7 @@ $$Normalized \_ Revenue (year,movie) = \frac{Revenue(movie)}{Cumulative \_ Infla
 
 Here, $$Cumulative \_ Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
 
-Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. To have the Box-office and ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
+Additionally, to gauge quality and popularity, we utilize IMDb ratings, which is a metric not just for cinematic quality but also a gauge of audience favor, as these ratings emanate from amateur movie lovers rather than professional critics. In order to have the box-office revenues and IMDb ratings on a comparable scale, we normalize them and scale them on a scale going from 0 to 1. 
 
 To create a recognition coefficient ($$RC$$) for assessing an actor's recognition, we first introduce the concept of a a movie coefficient ($$MC$$) which is the average of the normalized movie rating and box office revenue scores:
 
