@@ -11,9 +11,9 @@ Ever found yourself caught up in those spirited debates about which actor is the
 
 Let's start walking you through how we do that. In our analysis, we assert that an actor's recognition is contingent on the revenue, quality, and popularity of the movies they star in, as well as their relative importance in these films. A highly recognized actor tends to feature predominantly in high-revenue, popular movies, often in significant roles. Conversely, a less recognized actor is likely to have a career characterized by lesser-known movies, lower revenues, and less popularity. 
 
-We account for movie revenue using box office figures. These box office figures are normalized with yearly inflation rates to ensure a consistent monetary scale for comparison. The formula for this normalization is:
+We account for movie revenue using box office figures. These box office figures are adapted with yearly inflation rates to ensure a consistent monetary scale for comparison. The formula for this normalization is:
 
-$$Normalized \_ Revenue (year,movie) = \frac{Revenue(movie)}{Cumulative \_ Inflation(year)}$$
+$$Adapted \_ Revenue (year,movie) = \frac{Revenue(movie)}{Cumulative \_ Inflation(year)}$$
 
 Here, $$Cumulative \_ Inflation(year) = \prod_{i=1914}^{year} \left(1 + Inflation_i \right)$$, where $$Inflation_i$$ is the inflation rate for the $$i$$-th year.
 
