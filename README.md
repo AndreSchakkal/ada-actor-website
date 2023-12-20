@@ -43,7 +43,7 @@ $$\overline{RC_{year}}(actor,year) = RC_{year}(actor,year) + C *\overline{RC_{ye
 
 It is important to note that we initialize the momentum term, $$\overline{RC_{year}}(actor, 0)$$, to zero.
 
-Finally, to obtain an actor's overall recognition coefficient, we aggregate the yearly recognition coefficients with momentum over a span of years:
+Finally, to obtain an actor's overall recognition coefficient, we aggregate the yearly recognition coefficients with momentum $$\overline{RC_{year}}$$ over a span of years:
 
 $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i)$$
 
