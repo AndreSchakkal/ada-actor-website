@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Bubble Example</title>
+  <style>
+    .actor-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .actor-name {
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Arial', sans-serif; /* Change the font family */
+      background-color: #3498db; /* Add background color */
+      padding: 8px;
+      border-radius: 8px;
+      display: inline-block;
+      position: relative; /* Make sure the .actor-name is positioned relative to its container */
+    }
+
+    .actor-image {
+      position: absolute;
+      top: -60px; /* Adjust the position of the image above the actor name */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px; /* Set the desired width for the image */
+      height: 80px; /* Set the desired height for the image */
+      border-radius: 50%; /* Make the image circular */
+    }
+
+    .bubble {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      color: #555;
+      z-index: 1;
+      width: 400px; /* Set the desired width */
+      font-family: 'Arial', sans-serif;
+    }
+
+    .actor-container:hover .bubble {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="actor-container">
+  <img class="actor-image" src="Sean Connery.jpg" alt="Sean Connery">
+  <span class="actor-name">Sean Connery</span>
+  <div class="bubble">
+    The Recognition Coefficient of Sean Connery experiences a remarkable ascent with the advent of James Bond in "Dr. No" (1962), catapulting him to global icon status and marking the inception of the Bond Era, which persists until "Never Say Never Again" in 1983. This period represents the first plateau of recognition in his career. Post-Bond, Connery distances himself from the iconic character, and sees a notable surge in recognition driven by successes like "The Untouchables" (1987) and "Indiana Jones and the Last Crusade" (1989). This success propels him into the second phase of his career, marked by a higher plateau of recognition. However, starting 2000, his participation in less successful films leads to a gradual decline in the Fame/Recognition Coefficient. Sean Connery ultimately concludes his illustrious career with a retirement in 2006.
+  </div>
+</div>
+
+</body>
+</html>
