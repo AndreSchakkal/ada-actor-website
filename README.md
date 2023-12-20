@@ -132,11 +132,11 @@ Additionally, try the interesting examples below. Hover over the actors' names t
 
 {% include Sean_Connery.html %}
 
-{% include Daniel_Radcliffe.html %}
-
 {% include Mel_Gibson.html %}
 
 {% include Gerard_Depardieu.html %}
+
+{% include Daniel_Radcliffe.html %}
 
 {% include Elizabeth_Taylor.html %}
 
