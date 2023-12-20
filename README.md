@@ -307,7 +307,7 @@ As we can see, similarly to the previous plot, in the early years, European acto
 Specifically, we notice that Post-Civil Rights movement (after 1970), the proportion of African actors among the most recognized experiences a substantial increase. Furthermore, a particularly interesting facet is the diminishing proportion of European actors among the top 10% most recognized. This proportion shrinks from a commanding 77.8% in the earliest available decade to a more balanced 51.4% in the latest available decade. This significant decrease of 26.4% underscores a positive evolution in public opinion. The shift reflects a growing acceptance and appreciation for well-known actors of diverse ethnicities, marking a positive step towards a more inclusive and representative entertainment industry.
 
 
-# Summary
+# Conclusion
 
 In the enthralling exploration of actor recognition and its evolution across the cinematic tapestry, our journey has unveiled a captivating narrative that spans genres, ethnicities, and pivotal moments in history. The intricate web of factors influencing an actor's recognition encompasses not only the quality and popularity of their movies but also the socio-cultural landscape and historical movements that shape human existence.
 
@@ -323,7 +323,7 @@ The exploration of gender representation in cinema unravels a nuanced tale. Whil
 ## Ethnic Representation:
 The analysis of ethnic representation reveals a dynamic narrative shaped by historical movements. The impact of the Civil Rights Movement on the increased proportion of African actors is discernible, especially post-1970. The top 10% most recognized actors reflect a changing landscape, with European actors no longer dominating, signaling a shift towards greater diversity and inclusivity.
 
-## Conclusion
+## Summary
 In conclusion, our cinematic journey through time and recognition unveils a rich narrative of evolution and transformation. Actors, as integral components of the ever-evolving cinematic tapestry, mirror the shifts in societal values, historical movements, and the changing dynamics of the entertainment industry. While challenges such as gender disparities and gaps in ethnic representation persist, the trajectory points towards positive change and increasing inclusivity.
 
 As we bid farewell to this cinematic exploration, it is clear that actors are not merely performers on screen; they are cultural reflections, influencers, and, in many ways, architects of the evolving narrative of human history. The enthralling world of cinema continues to be a canvas where diverse stories, voices, and faces converge, shaping the recognition of actors in ways that transcend time and resonate with the collective consciousness of humanity.
