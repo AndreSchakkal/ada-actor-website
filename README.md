@@ -261,6 +261,31 @@ The bar plot below illustrates the evolution of the proportion of different ethn
 
 {% include Ethnicities_Over_Decades.html %}
 
+## Distribution of Recognition among ethnicities
+
+An interesting analysis involves examining how the recognition of different ethnicities has evolved over time. In continuation of our focus on the impact of the Civil Rights Movement on the representation of black actors in cinema, we explore whether there was a consequential change in the recognition of African actors post the Civil Rights Movement.
+
+We begin by plotting how the mean recognition coefficient of all actors (regardless of ethnicity) varies with time.
+
+{% include 
+
+As we can see, the overall mean recognition of actors increases over time. This upward trajectory points to growing box office revenues, enhanced movie quality, and, as a result, an expanding audience base. As a result, actors are gaining more recognition, and it's evident that cinema, as well as the actors themselves, are playing an increasingly significant role in people's lives.
+
+Turning our attention to the recognition of actors from specific ethnicities
+
+
+{% include 
+
+
+As anticipated, European actors show a noticeable increase in recognition. In contrast, Asian actors experience a more modest rise. However, the most noteworthy observation is the increase in recognition for African actors, aligning with the years following the conclusion of the Civil Rights Movement in 1968. This temporal correlation suggests that the movement may have been a contributing factor to the heightened recognition of African actors. Importantly, not only are African actors participating in movies with higher quality and box office revenues, but they are also playing more imortant roles. Supporting this claim, the plot below illustrates the evolution of the mean importance of African actors in cinema.
+
+{% include 
+
+
+Despite some fluctuations before the year 1970, likely due to limited data, a consistent pattern emerges. After the Civil Rights Movement, the mean importance of African actors forms a relatively high plateau, contrasting with the lower plateau seen before the movement. This suggests a notable shift wherein more African actors are attaining leading roles and playing more significant parts in high-quality, high-revenue movies. In essence, the changing landscape underscores the increasing prominence and importance of African actors in the cinematic realm.
+
+
+
 ## Ethnicities of most-recognized actors
 
 Building upon our previous analysis, let's delve into the ethnicities of the top 10% most recognized actors.
