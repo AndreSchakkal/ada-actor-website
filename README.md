@@ -340,36 +340,3 @@ The analysis of ethnic representation reveals a dynamic narrative shaped by hist
 In conclusion, our cinematic journey through time and recognition unveils a rich narrative of evolution and transformation. Actors, as integral components of the ever-evolving cinematic tapestry, mirror the shifts in societal values, historical movements, and the changing dynamics of the entertainment industry. While challenges such as gender disparities and gaps in ethnic representation persist, the trajectory points towards positive change and increasing inclusivity.
 
 As we bid farewell to this cinematic exploration, it is clear that actors are not merely performers on screen; they are cultural reflections, influencers, and, in many ways, architects of the evolving narrative of human history. The enthralling world of cinema continues to be a canvas where diverse stories, voices, and faces converge, shaping the recognition of actors in ways that transcend time and resonate with the collective consciousness of humanity.
-
-# Remarks 
-
-**TALK ABOUT LIMITATIONS**
-
-
-**ADD ACTOR PHOTOS TO THE HOVER, AND ADJUST BUBBLE POSITION**
-
-**HOVER ON ACTOR NAME TO KNOW HIS STORY**
-
-**SCANDALS**
-**DEATH**
-**BLOCKBUSTERS**
-**PREGRANCIES**
-
-- Charlie Sheen
-- Rob Lowe
-- Winona Ryder
-- Elizabeth Taylor
-- Richard Burton
-- Natalie Wood
-- Woody Allen
-- Ingrid Bergman
-- Mia Farrow
-- Sharon Stone
-- Mel Gibson
-- Corey Feldman
-
-Limitation: we know that other more subtle factors could be taken into account to improve the accuracy of the analysis, like social media influence of the actor, and (CITE OTHER FACTORS).
-
-**A LOT OF MISSING DATA FOR EARLY YEARS THIS CAN AFFECT THE ANALYSIS**
-
-**RESEARCH QUESTIONS?**
