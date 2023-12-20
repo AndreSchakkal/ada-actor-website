@@ -128,7 +128,7 @@ Now, it's your turn! Explore the plot showcasing the evolution of the recognitio
 
 Additionally, try the interesting examples below. Hover over the actors' names to uncover the narrative behind their recognition journeys:
 
-
+<br>
 
 {% include Sean_Connery.html %}
 
