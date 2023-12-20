@@ -19,6 +19,17 @@
       padding: 8px;
       border-radius: 8px;
       display: inline-block;
+      position: relative; /* Make sure the .actor-name is positioned relative to its container */
+    }
+
+    .actor-image {
+      position: absolute;
+      top: -60px; /* Adjust the position of the image above the actor name */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px; /* Set the desired width for the image */
+      height: 80px; /* Set the desired height for the image */
+      border-radius: 50%; /* Make the image circular */
     }
 
     .bubble {
@@ -46,8 +57,8 @@
 </head>
 <body>
 
-
 <div class="actor-container">
+  <img class="actor-image" src="images/Richard Burton.jpg" alt="Richard Burton">
   <span class="actor-name">Richard Burton</span>
   <div class="bubble">
     Richard Burton's life was a tale of remarkable highs and challenging lows across the decades. In the 1960s, he made a foray into film, garnering acclaim for his roles in iconic productions such as "Cleopatra" (1963) and "Becket" (1964), leading to a notable increase in his recognition coefficient. The pinnacle of his cinematic legacy came with the 1966 classic "Who's Afraid of Virginia Woolf?," solidifying his position at the peak of recognition. However, the latter part of the 1960s and the 1970s brought forth inconsistent film outcomes and personal struggles, marked by battles with alcoholism. Moreover, Burton's divorce from Elizabeth Taylor and his involvement in a series of films with mixed critical reception, often perceived as mediocre, contributed to a decline in his recognition. His journey concluded with his passing in 1984.

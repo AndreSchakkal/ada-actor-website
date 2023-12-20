@@ -19,14 +19,25 @@
       padding: 8px;
       border-radius: 8px;
       display: inline-block;
+      position: relative; /* Make sure the .actor-name is positioned relative to its container */
+    }
+
+    .actor-image {
+      position: absolute;
+      top: -60px; /* Adjust the position of the image above the actor name */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px; /* Set the desired width for the image */
+      height: 80px; /* Set the desired height for the image */
+      border-radius: 50%; /* Make the image circular */
     }
 
     .bubble {
       display: none;
       position: absolute;
-      top: -90px;
-      left: -150%;
-      transform: translateX(0%);
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: #fff;
       padding: 8px;
       border: 1px solid #ddd;
@@ -35,8 +46,8 @@
       font-size: 14px;
       color: #555;
       z-index: 1;
-      width: 1000px; /* Set the desired width */
-      font-family: 'Arial', sans-serif; /* Change the font family */
+      width: 400px; /* Set the desired width */
+      font-family: 'Arial', sans-serif;
     }
 
     .actor-container:hover .bubble {
@@ -47,6 +58,7 @@
 <body>
 
 <div class="actor-container">
+  <img class="actor-image" src="images/Mel Gibson.jpg" alt="Mel Gibson">
   <span class="actor-name">Mel Gibson</span>
   <div class="bubble">
     Mel Gibson's recognition coefficient surged following his film debut in "Mad Max" (1979). The success of this movie, along with subsequent roles in films like "Gallipoli" (1981) and "Mad Max 2" (1982), significantly bolstered his fame. Notably, the release of "Lethal Weapon" (1987) further elevated his recognition. However, the early 2000s witnessed a potential decline in his recognition coefficient. This decline can be attributed to his brief pause from acting and a shift towards directing. It's worth noting that the recognition coefficient focuses solely on his acting career, not accounting for his recognition as a director, which might explain the observed decrease.
