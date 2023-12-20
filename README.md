@@ -307,6 +307,19 @@ As we can see, similarly to the previous plot, in the early years, European acto
 Specifically, we notice that Post-Civil Rights movement (after 1970), the proportion of African actors among the most recognized experiences a substantial increase. Furthermore, a particularly interesting facet is the diminishing proportion of European actors among the top 10% most recognized. This proportion shrinks from a commanding 77.8% in the earliest available decade to a more balanced 51.4% in the latest available decade. This significant decrease of 26.4% underscores a positive evolution in public opinion. The shift reflects a growing acceptance and appreciation for well-known actors of diverse ethnicities, marking a positive step towards a more inclusive and representative entertainment industry.
 
 
+# Limitations
+
+This study, though insightful, has notable limitations that need to be considered in interpreting its findings:
+
+- External Factors Impacting Recognition: The study does not account for external factors such as social, economic, or cultural changes that might influence actor recognitioN. External events, societal shifts, or economic changes could have a substantial impact on how actors are recognized. For instance, changes in public sentiment, political climate, or global events might influence the popularity and recognition of actors.
+
+- Interpretation of Trends: While the study identifies correlations between certain events and changes in recognition patterns, establishing causation requires more in-depth analysis. Correlations do not necessarily imply causation. More thorough investigations, considering a broader range of variables and potential confounding factors, are necessary to draw causal relationships accurately.
+
+- Missing Data in Early Years: Incomplete or missing data for certain actors and movies, particularly in the early years, could introduce biases.
+
+- Missing Ethnicity Data: Although we assume missing values are randomly distributed, akin to a randomized control experiment, which allows utilizing existing data and mitigates bias. Having more ethnicity data would reduce variances and fluctuations in the results.
+
+
 # Conclusion
 
 In the enthralling exploration of actor recognition and its evolution across the cinematic tapestry, our journey has unveiled a captivating narrative that spans genres, ethnicities, and pivotal moments in history. The intricate web of factors influencing an actor's recognition encompasses not only the quality and popularity of their movies but also the socio-cultural landscape and historical movements that shape human existence.
