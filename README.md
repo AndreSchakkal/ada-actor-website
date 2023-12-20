@@ -31,7 +31,7 @@ $$RC_{movie}(actor, year, movie) = MC(year, movie) \times (1 + IC(actor, year, m
 
 This coefficient $$RC_{movie}$$ captures an actor's recognition in a specific year and movie
 
-To assess an actor's overall recognition in a given year, we aggregate the movie recognition coefficients using the formula:
+To assess an actor's overall recognition in a given year, we aggregate the movie recognition coefficients $$RC_{movie}$$ using the formula:
 
 $$RC_{year}(actor,year) = \frac{1}{n(actor)} \sum_{i=1}^{n(actor)} RC_{movie}(actor,year,{movie}_i)$$
 
