@@ -211,7 +211,7 @@ The subsequent plot highlights this difference, showing a mean first appearance 
 
 # Ethnic representation in Cinema over time
 
-Among the significant repercussions of the Feminist movement was the enactment of the Civil Rights Act of 1964, a groundbreaking law designed to combat discrimination based on gender, race, color, religion, or national origin. Simultaneously, the Civil Rights movement, advocating for racial equality, played an instrumental role in the realization of this transformative Act. Spanning from 1954 to 1968 in the United States, the civil rights movement stood as a nonviolent social campaign, striving to eradicate legalized racial segregation, discrimination, and disenfranchisement. 
+Among the significant repercussions of the Feminist movement was the enactment of the Civil Rights Act of 1964, a groundbreaking law designed to combat discrimination based on gender, race, color, religion, or national origin. Simultaneously, the Civil Rights movement, advocating for racial equality, played an instrumental role in the realization of this transformative Act. Spanning from 1954 to 1968 in the United States, the civil rights movement stood as a nonviolent social campaign, striving to eradicate legalized racial segregation and discrimination. 
 
 This historical context lays the foundation for the second part of our exploration into the dynamic representation of diverse ethnicities in cinema. Our objective is to trace the evolution of ethnic representation over time, with a specific emphasis on examining the impact of movements like the Civil Rights Movement on the portrayal of black actors in the film industry.
 
