@@ -203,7 +203,7 @@ Another intriguing facet to explore is the debut age of actors and whether there
 
 {% include 1st_appearance_hist.html %}
 
-The histogram suggests a noticeable difference in the debut ages of male and female actors. Specifically, it indicates that female actors tend to start their careers at an earlier age compared to their male counterparts. This observation is further supported by a t-test, which yields an extremely small p-value (p−value<<0.05). This compelling result provides strong evidence to assert a significant difference between the mean first-appearance ages for female and male actors.
+The histogram suggests a noticeable difference in the debut ages of male and female actors. Specifically, it indicates that female actors tend to start their careers at an earlier age compared to their male counterparts. This observation is further supported by a t-test, which yields a very small p-value (p−value$$<0.05$$). This compelling result provides strong evidence to assert a significant difference between the mean first-appearance ages for female and male actors.
 
 The subsequent plot highlights this difference, showing a mean first appearance age of 24.2 years for female actors and 29.0 years for male actors:
 
