@@ -79,7 +79,7 @@ This surge in recognition post-1970 can be attributed to two pivotal historical 
 </p>
 
 
-In the meantime we see also some decrease, which is likely attributable to the data not being as up-to-date.
+In the meantime we see also some decrease around the late 2000s, which is likely attributable to the data not being as up-to-date.
 
 Having explored the evolution of Actor Recognition over the years, let's now dive into the more thrilling aspect: evaluating the overall recognition of actors. The following list presents actors ranked from the most recognized to the least recognized. Take a moment to find your favorite actor and discover their rank. As a small game, consider all the actors you know and try to identify the less known ones in this list!
 
