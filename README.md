@@ -65,12 +65,15 @@ Consequently, we conclude that starting from 1970, actors experience even greate
 This surge in recognition post-1970 can be attributed to two pivotal historical factors:
 
 - The Blockbuster Phenomenon (Jaws, 1975): Directed by Steven Spielberg, "Jaws" is often hailed as the first blockbuster film, revolutionizing film distribution and marketing. The subsequent release of "Star Wars" in 1977, directed by George Lucas, further transformed the science fiction genre and became a cultural phenomenon, setting new standards for the movie industry and its merchandising.
-- Invention of VHS (1976): The introduction of VHS (Video Home System) in 1976 allowed audiences to watch films at home, reshaping the industry's distribution model and making cinema more accessible to a wider audience.
 
 <p align="center">
-  <img src="images/STAR_WARS.jpg" width="600" alt="Image 1">
-  <img src="images/JAWS.jpg" width="220" alt="Image 2">
+  <img src="images/STAR_WARS.jpg" width="300" alt="Image 1">
+  <img src="images/JAWS.jpg" width="110" alt="Image 2">
 </p>
+
+- Invention of VHS (1976): The introduction of VHS (Video Home System) in 1976 allowed audiences to watch films at home, reshaping the industry's distribution model and making cinema more accessible to a wider audience.
+
+
 <p align="center">
   <img src="images/VHS.png" width="400" alt="Image 1">
 </p>
