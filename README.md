@@ -2,7 +2,7 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 Throughout this project several datasets, APIs, and webpages were used. A brief presentation of each can be found in the [Resources](example.md) page.
 
-Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition. Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history. Third, our analysis extends to gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods. Moving forward, we delve into the diverse ethnic representations in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to understand the transformative shifts in their presence on the cinematic stage.
+Embarking on a cinematic exploration, this project aims to unravel the historical evolution of actor recognition and representation. First, our exploration begins with a focus on actors' recognition, where we quantify the intricate factors shaping their prominence. Using the Recognition Coefficient ($$RC$$), we delve into its evolution over time and explore actors' ranking based on recognition. Following this, we shift our attention to the temporal dimension, examining the span of actors' recognition across various periods. This exploration allows us to uncover the evolving dynamics of recognition throughout cinematic history. Third, our analysis extends to actors' gender representation in cinema, aiming to provide insights into how the Feminist Movement has influenced the portrayal of female actors. This section adopts a gender-centric lens to understand the changing dynamics across different historical periods. Moving forward, we delve into the diverse ethnic representations of actors in cinema, specifically focusing on the impact of the Civil Rights Movement on African-American actors. Tracing the paths of various ethnic backgrounds, our analysis aims to understand the transformative shifts in their presence on the cinematic stage.
 
 
 # Actor’s Recognition
@@ -47,7 +47,7 @@ Finally, to obtain an actor's overall recognition coefficient, we aggregate the 
 
 $$RC_{overall}(actor) = \frac{1}{Y} \sum_{i=1}^{Y} \overline{RC_{year}}(actor,{year}_i)$$
 
-Here, $$Y$$ represents the total number of years considered in the analysis. This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
+Here, $$Y$$ represents the total number of years considered in the analysis (from 1914 to 2012). This comprehensive approach provides a nuanced understanding of an actor's recognition, accounting for both individual movie performances and the temporal evolution of their career.
 
 
 ## Analysis of Actors' Recognition
@@ -81,7 +81,7 @@ This surge in recognition post-1970 can be attributed to two pivotal historical 
 
 In the meantime we see also some decrease around the late 2000s, which is likely attributable to the data not being as up-to-date.
 
-Having explored the evolution of Actor Recognition over the years, let's now dive into the more thrilling aspect: evaluating the overall recognition of actors. The following list presents actors ranked from the most recognized to the least recognized. Take a moment to find your favorite actor and discover their rank. As a small game, consider all the actors you know and try to identify the less known ones in this list!
+Having explored the evolution of Actor Recognition over the years, let's now dive into the more thrilling aspect: evaluating the overall recognition of actors. As previously explained, we aggregate the recognition coefficients of each actor across the years, computing their mean to derive an overall recognition coefficient that encapsulates the entirety of an actor's career. The following list presents actors ranked from the most recognized to the least recognized. Take a moment to find your favorite actor and discover their rank. As a small game, consider all the actors you know and try to identify the less known ones in this list!
 
 
 
@@ -156,7 +156,7 @@ To start our analysis, let's examine the proportion of female and male actors ov
 
 {% include male_female_proportion.html %}
 
-As evident from the chart, the proportion of male actors is significantly higher, almost double that of female actors throughout the years. However, are there discernible trends that have evolved over time? Have major historical events, such as the Feminist Movement, influenced the representation of females in cinema?
+As evident from the chart, the proportion of male actors is significantly higher, almost double that of female actors throughout the years. However, are there discernible trends that have evolved over time? Have major historical events, such as the Feminist Movement, influenced the representation of female actors in cinema?
 
 ## Impact of the Feminist movement on female representation in Cinema
 The second wave feminist movement, prominent in the 1960s and 1970s, advocated for gender equality and reproductive rights. It gained momentum in the early 1960s, notably sparked by the publication of Betty Friedan's "The Feminine Mystique" in 1963. Its influence gradually decreased by the early 1980s. The Feminist movement had a profound impact on decreasing gender-based discrimination, exemplified by the Equal Pay Act of 1963 and Title IX of 1972—an Education Amendment prohibiting gender-based discrimination in educational programs and activities.
