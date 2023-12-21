@@ -312,7 +312,7 @@ Specifically, we notice that Post-Civil Rights movement (after 1970), the propor
 
 This study, though insightful, has notable limitations that need to be considered in interpreting its findings:
 
-- External Factors Impacting Recognition: The study does not account for external factors such as social, economic, or cultural changes that might influence actor recognitioN. External events, societal shifts, or economic changes could have a substantial impact on how actors are recognized. For instance, changes in public sentiment, political climate, or global events might influence the popularity and recognition of actors.
+- External Factors Impacting Recognition: The study does not account for external factors such as social, economic, or cultural changes that might influence actor recognition. External events, societal shifts, or economic changes could have a substantial impact on how actors are recognized. For instance, changes in public sentiment, political climate, or global events might influence the popularity and recognition of actors.
 
 - Interpretation of Trends: While the study identifies correlations between certain events and changes in recognition patterns, establishing causation requires more in-depth analysis. Correlations do not necessarily imply causation. More thorough investigations, considering a broader range of variables and potential confounding factors, are necessary to draw causal relationships accurately.
 
