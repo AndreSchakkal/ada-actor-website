@@ -129,7 +129,7 @@ Now, it's your turn! Explore the plot showcasing the evolution of the recognitio
 
 {% include Actor_recognition_graph.html %}
 
-Additionally, try to search for the interesting examples below. Hover over the actors' names to uncover the narrative behind their recognition journeys:
+Additionally, search for the recognition graphs of the interesting examples below. Hover over the actors' names to uncover the narrative behind their recognition journeys:
 
 <br>
 
