@@ -265,6 +265,8 @@ The bar plot below illustrates the evolution of the proportion of different ethn
 
 {% include Ethnicities_Over_Decades.html %}
 
+In the plot above, you have the option to interact with specific ethnicities by clicking on their corresponding legend entries. By selecting or deselecting specific ethnicities, you can visualize them separately and gain a more focused perspective on the evolution of the proportion of a particular ethnicity. 
+
 ## Distribution of Recognition among ethnicities
 
 An interesting analysis involves examining how the recognition of different ethnicities has evolved over time. In continuation of our focus on the impact of the Civil Rights Movement on the representation of black actors in cinema, we explore whether there was a consequential change in the recognition of African actors post the Civil Rights Movement.
@@ -281,7 +283,7 @@ Turning our attention to the recognition of actors from specific ethnicities
 {% include recognition_ethnicities_3.html %}
 
 
-As anticipated, European actors show a noticeable increase in recognition. In contrast, Asian actors experience a more modest rise. However, the most noteworthy observation is the increase in recognition for African actors, aligning with the years following the conclusion of the Civil Rights Movement in 1968. This temporal correlation suggests that the movement may have been a contributing factor to the heightened recognition of African actors. Importantly, not only are African actors participating in movies with higher quality and box office revenues, but they are also playing more imortant roles. Supporting this claim, the plot below illustrates the evolution of the mean importance of African actors in cinema.
+As anticipated, European actors show a noticeable increase in recognition. In contrast, Asian actors experience a more modest rise. However, the most noteworthy observation is the increase in recognition for African actors, aligning with the years following the conclusion of the Civil Rights Movement in 1968. This temporal correlation suggests that the movement may have been a contributing factor to the heightened recognition of African actors. Importantly, not only are African actors participating in movies with higher quality and box office revenues, but they are also playing more imortant roles. As previously explained, the recognition coefficient is computed by considering the movie's revenue and rating, alongside the importance of the role portrayed by the actor. Supporting this claim, the plot below illustrates the evolution of the mean importance of African actors in cinema.
 
 {% include importance_african.html %}
 
