@@ -91,7 +91,7 @@ Having explored the evolution of Actor Recognition over the years, let's now div
 We hope you've spotted your favorite actors among this list 😀.
 
  
-This table offers a snapshot of the most recognized actors, ordered by their General Recognition Coefficients. Notably, the rankings feature a mix of contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne and Sean Connery. Unfortunately, but not surprisingly, the representation of female actors in the rankings is minimal, underscoring the enduring dominance of well-known male actors. This ranking serves as a testament to the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
+This table offers a snapshot of the most recognized actors, ordered by their General Recognition Coefficients. Notably, the rankings feature a mix of contemporary figures like Robert De Niro and iconic actors from earlier periods, such as John Wayne. Unfortunately, but not surprisingly, the representation of female actors in the rankings is minimal, underscoring the enduring dominance of well-known male actors. This ranking serves as a testament to the timeless influence of actors, encompassing both modern-day stars and those from cinematic history.
 
 Next, armed with this list of actors, let's visualize the distribution of only the top 10% most well-recognized actors. Are modern-day actors more prevalent among this elite 10%?
 
