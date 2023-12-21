@@ -166,7 +166,8 @@ In this section, we aim to explore the impact of this movement on female represe
 - Before the Feminist Movement (1914-1963): Examining the early years leading up to the Feminist Movement.
 - During the Feminist Movement (1963-1980): Analyzing the period when the movement was at its peak.
 - After the Feminist Movement (1980-2012): Investigating the years following the peak of the movement.
-- 
+
+
 Following this, we fit a regression line to the proportion of female actors for each of these periods.
 {% include female_actors.html %}
 
