@@ -195,7 +195,7 @@ While the number of female and male actors differs, there are apparent similarit
 
 From the density plot above, it's evident that the density peak for female actors is higher, indicating a greater likelihood of having lower recognition coefficients, especially below 0.04. This suggests that a larger proportion of female actors tend to have lower recognition amplitudes compared to their male counterparts. In essence, there are more male actors with higher recognition amplitudes.
 
-To assess the statistical significance of these differences, we conduct a Kolmogorov–Smirnov test. The test yielded a p-value less than 0.05, providing sufficient evidence to reject the null hypothesis. This result indicates that the two density distributions (for male and female actors) are not sampled from the same distribution. In simpler terms, there is a statistically significant difference between the recognition coefficient distributions for male and female actors.
+To assess the statistical significance of these differences, we conduct a Kolmogorov–Smirnov test. The test yielded a p-value smaller than 0.05, providing sufficient evidence to reject the null hypothesis. This result indicates that the two density distributions (for male and female actors) are not sampled from the same distribution. In simpler terms, there is a statistically significant difference between the recognition coefficient distributions for male and female actors.
 
 ## Actor first-appearance among genders
 
