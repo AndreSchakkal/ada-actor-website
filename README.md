@@ -323,7 +323,7 @@ This study, though insightful, has notable limitations that need to be considere
 
 # Conclusion
 
-In the enthralling exploration of actor recognition and its evolution across the cinematic tapestry, our journey has unveiled a captivating narrative that spans genres, ethnicities, and pivotal moments in history. The intricate web of factors influencing an actor's recognition encompasses not only the quality and popularity of their movies but also the socio-cultural landscape and historical movements that shape human existence.
+In the enthralling exploration of actor recognition and its evolution across the cinematic tapestry, our journey has unveiled a captivating narrative that spans genders, ethnicities, and pivotal moments in history. The intricate web of factors influencing an actor's recognition encompasses not only the quality and popularity of their movies but also the socio-cultural landscape and historical movements that shape human existence.
 
 ## Evolution of Actor Recognition:
 Our analysis of actor recognition coefficients over time reveals a compelling trend – a surge in recognition post-1970, marked by the emergence of blockbusters like "Jaws" and the advent of home video with VHS. This era witnessed a transformative shift in the cinematic landscape, with actors experiencing unprecedented recognition, signaling the profound impact of cinema on society.
