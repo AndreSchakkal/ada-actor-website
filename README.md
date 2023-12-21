@@ -179,7 +179,7 @@ Moving beyond overall trends, we shift our focus to the top 10% most well-recogn
 
 {% include female_actors_10perc.html %}
 
-The plot suggests a consistent increase in the proportion of female actors among well-known actors, independent of the feminist movement. A subsequent Chow test on the proportion of well-known female actors during and after the feminist movement yields a p−value>0.05. Consequently, we lack sufficient evidence to suggest any structural breakpoint in this subset.
+The plot suggests a consistent increase in the proportion of female actors among well-known actors, independent of the feminist movement.
 
 In summary, while the proportion of female actors among all females increases, likely due to the feminist movement, the proportion of female actors among well-known actors follows a distinct pattern, steadily rising over time independent of the feminist movement.
 
