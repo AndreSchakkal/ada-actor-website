@@ -332,7 +332,7 @@ Our analysis of actor recognition coefficients over time reveals a compelling tr
 Delving into the longevity of actor recognition, our study indicates an increase in the average span of recognition for actors before 1970. This suggests that, over time, actors tend to enjoy more extended periods of recognition, possibly influenced by evolving societal norms, improved health, and delayed retirements.
 
 ## Gender Representation:
-The exploration of gender representation in cinema unravels a nuanced tale. While the overall proportion of female actors lags behind their male counterparts, the influence of the Feminist Movement is evident. Post-1980, the proportion of female actors among the 10% most recognized rises, reflecting a positive trend towards greater inclusivity.
+The exploration of gender representation in cinema unravels a nuanced tale. While the overall proportion of female actors lags behind their male counterparts, the influence of the Feminist Movement is evident. Post-1980, the proportion of female actors rises, reflecting a positive trend towards greater inclusivity.
 
 ## Ethnic Representation:
 The analysis of ethnic representation reveals a dynamic narrative shaped by historical movements. The impact of the Civil Rights Movement on the increased proportion of African actors is discernible, especially post-1970. The top 10% most recognized actors reflect a changing landscape, with European actors no longer dominating, signaling a shift towards greater diversity and inclusivity.
