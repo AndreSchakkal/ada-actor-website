@@ -316,6 +316,8 @@ This study, though insightful, has notable limitations that need to be considere
 
 - External Factors Impacting Recognition: The study does not account for external factors such as social, economic, or cultural changes that might influence actor recognition. External events, societal shifts, or economic changes could have a substantial impact on how actors are recognized. For instance, changes in public sentiment, political climate, or global events might influence the popularity and recognition of actors.
 
+- Improving Importance Evaluation: Character importance evaluation involves counting a character's name mentions in a movie's plot summary. This approach, while indicative, is flawed as it misses pronoun references and can equate minor characters, like Forrest Gump Jr (Haley Joel Osment), with major ones like Forrest Gump (Tom Hanks) in "Forrest Gump." Additionally, name frequency may not truly reflect a character's significance. An alternative, more accurate method might be using a generative language model to analyze plot summary semantics for a better importance coefficient.
+
 - Interpretation of Trends: While the study identifies correlations between certain events and changes in recognition patterns, establishing causation requires more in-depth analysis. Correlations do not necessarily imply causation. More thorough investigations, considering a broader range of variables and potential confounding factors, are necessary to draw causal relationships accurately.
 
 - Missing Data in Early Years: Incomplete or missing data for certain actors and movies, particularly in the early years, could introduce biases.
